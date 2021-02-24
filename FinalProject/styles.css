@@ -1,0 +1,77 @@
+body {
+    background-color: #f5d9df;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#mainNav .navbar-brand{
+    color: #f3eced;
+}
+
+#mainNav {
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+#mainNav .nav-link {
+    color: white;
+}
+
+#mainNav .link-small{
+    color: rgb(192, 192, 192);
+    font-size: 0.8em;
+}
+
+
+#mainNav .nav-link:hover {
+    color: #2c2626;
+    background-color: rgb(155, 155, 155) !important;
+}
+
+
+
+#heading-group span {
+    color:#ea1c2c;
+}
+
+#heading-group h1 {
+    font-weight: 400;
+    font-size: 3 rem;
+}
+
+#mainNav.scrolled {
+    background-color: rgb(92, 96, 107) !important;
+    transition: background-color 500ms linear;
+  }
+
+  /* Styles for main sections*/
+
+
+@media (max-width: 1200px) {
+    #heading-group h1 {
+        font-weight: 400;
+        font-size: 1 rem;
+    }
+}
+
+.header img {
+    margin-top: 2em;
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    color: #ea1c2c;
+    font-size: 2.5rem;
+}
+
+#lead {
+    color: #595c59;
+    font-size: 1.5rem;
+    line-height: 2.0;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
