@@ -1,7 +1,7 @@
     <!--Navbar starts here-->
     <div class="container-fluid">
         <nav class="navbar navbar-dark bg-dark navbar-expand-md py-0 sticky-top" id="mainNav">
-            <a href="#" class="navbar-brand">
+            <a href="index.php" class="navbar-brand">
                 SHIRTS
             </a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="toggle navbar">
