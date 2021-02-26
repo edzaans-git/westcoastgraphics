@@ -17,150 +17,22 @@
 <body>
 
 
-    <!--Navbar starts here-->
-    <div class="container-fluid">
-        <nav class="navbar navbar-dark bg-dark navbar-expand-md py-0 sticky-top" id="mainNav">
-            <a href="#" class="navbar-brand">
-                SHIRTS
-            </a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="toggle navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse  justify-content-end" id="navLinks">
-                <ul class="navbar-nav  justify-content-end">
-                    <li class="nav-item">
-                        <a href="" class="nav-link">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">STORE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="" class="nav-link">QUOTE</a>
-                    </li>
-
-                    <li class="nav-item">
-                    <a href="signup.php" class="nav-link link-small">Sign Up
-                            <img src="https://img.icons8.com/dusk/32/000000/add-user-male.png" />
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                    <a href="login.php" class="nav-link link-small">Log In
-                        <img src="https://img.icons8.com/nolan/32/login-rounded-right.png" />
-                            <!--Change icon size in the link(64px is default)-->
-                        </a>
-                  
-                    </li>
-                    <li class="nav-item ">
-                        <a href="" class="nav-link link-small">Your Cart
-                            <img src="https://img.icons8.com/fluent/32/000000/fast-cart.png" />
-                        </a>
-
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <!--Navbar ends here-->
+        <?php
+            include_once 'nav.php';
+        ?>
 
 
         <!--Main container-->
         <section class="header">
             <img src="https://novationmusic.com/sites/novation/files/TShirtsheader-2560-1000.png" class="img-fluid"
                 alt="Responsive image">
-</section>
-        <!-- Remove the container if you want to extend the Footer to full width. -->
-        <div class="my-5">
+        </section>
 
-            <!-- Footer -->
-            <footer class="text-center text-lg-start text-white" style="background-color: #929fba">
-                <!-- Grid container -->
-                <div class="container p-4 pb-0">
-                    <!-- Section: Links -->
-                    <section class="">
-                        <!--Grid row-->
-                        <div class="row">
-                            <!-- Grid column -->
-                            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                                <h6 class="text-uppercase mb-4 font-weight-bold">
-                                    Company name
-                                </h6>
-                                <p>
-                                    Here you can use rows and columns to organize your footer
-                                    content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit.
-                                </p>
-                            </div>
-                            <!-- Grid column -->
-
-                            <hr class="w-100 clearfix d-md-none" />
-
-                            <!-- Grid column -->
-                            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                                <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
-                                <p>
-                                    <a class="text-white">T-Shirts</a>
-                                </p>
-                                <p>
-                                    <a class="text-white">Hoodies</a>
-                                </p>
-                                <p>
-                                    <a class="text-white">Decals</a>
-                                </p>
-                                <p>
-                                    <a class="text-white">Custom</a>
-                                </p>
-                            </div>
-                            <!-- Grid column -->
-
-                            <hr class="w-100 clearfix d-md-none" />
-
-                            <!-- Grid column -->
-                            <hr class="w-100 clearfix d-md-none" />
-
-                            <!-- Grid column -->
-                            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
-                                <p><i class="fas fa-home mr-3"></i> Galway, Ireland</p>
-                                <p><i class="fas fa-envelope mr-3"></i> info@westcoastvinyl.com</p>
-                                <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
-                                <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
-                            </div>
-                            <!-- Grid column -->
-
-                            <!-- Grid column -->
-                            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                                <h6 class="text-uppercase mb-4 font-weight-bold">Follow us</h6>
-
-                                <!-- Facebook -->
-                                <a href="#!" role="button">
-                                    <img src="https://img.icons8.com/nolan/64/facebook-new.png" />
-                                </a>
-
-                                <!-- Twitter -->
-                                <a href="#!">
-                                    <img src="https://img.icons8.com/cute-clipart/64/000000/instagram-new.png" />
-                                </a>
-                            </div>
-                        </div>
-                        <!--Grid row-->
-                    </section>
-                    <!-- Section: Links -->
-                </div>
-                <!-- Grid container -->
-
-                <!-- Copyright -->
-                <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-                    © 2020 Copyright:
-                    <a class="text-white" href="https://www.westcoastvinyl.com">WestCoastVinylGraphics</a>
-                </div>
-                <!-- Copyright -->
-            </footer>
-            <!-- Footer -->
-        </div>
-    </div>
+        <?php
+            include_once 'footer.php';
+        ?>
+       
+   
 
 
 
