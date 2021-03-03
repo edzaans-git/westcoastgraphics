@@ -21,25 +21,100 @@
             include_once 'nav.php';
         ?>
 
-
-        <!--Main container-->
+        <!--Header-->
         <section class="header">
             <img src="https://novationmusic.com/sites/novation/files/TShirtsheader-2560-1000.png" class="img-fluid"
                 alt="Responsive image">
         </section>
+        <!--Header end-->
+
+        <!-- Main section -->
+
+  <div class="container">
+<!--row -->
+<div class="row main-content">
+  <div class="col-md-8 mb-5">
+    <h2>Our business</h2>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+    <a class="btn btn-primary btn-lg" href="quote.php">Get Quote &raquo;</a>
+  </div>
+  <div class="col-md-4 mb-5">
+    <h2>Get in touch</h2>
+    <hr>
+    <address>
+      <strong>West Coast Vinyl Graphics</strong>
+      <br>Galway
+      <br>Beverly Hills, CA 90210
+      <br>
+    </address>
+    <address>
+      <abbr title="Phone">P:</abbr>
+      (123) 456-7890
+      <br>
+      <abbr title="Email">E:</abbr>
+      <a href="mailto:info@westcoastgraphics.com">info@westcoastgraphics.com</a>
+    </address>
+  </div>
+</div>
+<!--row -->
+
+<!--Product section 1-->
+<!--row 1-->
+<div class="row">
+<div class="col-md-8 col-lg-8 mb-5">
+<h2>Customised T Shirts</h2>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+</div>
+  <div class="col-md-4 col-lg-4 mb-5">
+  <img src="img/wheelie.png" class="img-fluid" alt="Responsive image">
+</div>
+<!--Product section 1 end-->
+</div>
+<!--row end -->
+
+<!--Product section 2-->
+<!--row 2 -->
+<div class="row">
+<div class="col-md-8 col-lg-8 order-2 mb-5">
+<h2>Customised Hoodies</h2>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+</div>
+  <div class="col-md-4 col-lg-4 order-1 mb-5">
+  <img src="img/Gocku-hoodie.jpg" class="img-fluid" alt="Responsive image">
+</div>
+<!--Product section 2 end-->
+</div>
+<!--row end -->
+
+<!--row 3-->
+<div class="row">
+<div class="col-md-8 col-lg-8 mb-5">
+<h2>Customised signs</h2>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+</div>
+  <div class="col-md-4 col-lg-4 mb-5">
+  <img src="img/wheelie.png" class="img-fluid" alt="Responsive image">
+</div>
+<!--Product section 1 end-->
+</div>
+<!--row end -->
+
+</div>
+<!--container -->
+
 
         <?php
             include_once 'footer.php';
         ?>
-       
-   
-
-
-
-
-
-
-
+    
 
     <!--Bootstrap JS,jQuery and Popper here-->
 

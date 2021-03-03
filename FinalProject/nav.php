@@ -10,13 +10,13 @@
             <div class="collapse navbar-collapse  justify-content-end" id="navLinks">
                 <ul class="navbar-nav  justify-content-end">
                     <li class="nav-item">
-                        <a href="" class="nav-link">HOME</a>
+                        <a href="index.php" class="nav-link">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a href="" class="nav-link">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">STORE</a>
+                        <a href="store.php" class="nav-link">STORE</a>
                     </li>
                     <li class="nav-item">
                         <a href="" class="nav-link">QUOTE</a>

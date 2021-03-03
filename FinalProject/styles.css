@@ -75,5 +75,25 @@ h2 {
     margin-bottom: 100px;
 }
 
+.main-content {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: rgb(168, 168, 168);
+}
+
+.main-content h2{
+ color: rgb(255, 255, 255);
+}
+
+.main-content .btn.btn-primary {
+    background-color: #0414f3;
+}
+
+/*Card styling*/
+
+.card-body {
+    text-align: center;
+}
+
 /*Form styling*/
 
