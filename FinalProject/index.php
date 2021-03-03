@@ -46,12 +46,12 @@
     <address>
       <strong>West Coast Vinyl Graphics</strong>
       <br>Galway
-      <br>Beverly Hills, CA 90210
+      <br>Galway
       <br>
     </address>
     <address>
       <abbr title="Phone">P:</abbr>
-      (123) 456-7890
+      086-1111111
       <br>
       <abbr title="Email">E:</abbr>
       <a href="mailto:info@westcoastgraphics.com">info@westcoastgraphics.com</a>
