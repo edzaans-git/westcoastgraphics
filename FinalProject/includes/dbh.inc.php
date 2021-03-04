@@ -5,7 +5,7 @@ $dbusername = 'root';
 $dbpassword = '';
 $dbname = 'westcoast';
 
-$conn = mysqli_connect($servername,$dbusername,$dbpassword.$dbname);
+$conn = mysqli_connect($servername,$dbusername,$dbpassword,$dbname);
 
 if(!$conn) {
     die("Connection failed".mysqli_connect_error());
