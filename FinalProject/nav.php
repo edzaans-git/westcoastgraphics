@@ -16,7 +16,7 @@
                         <a href="" class="nav-link">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a href="store.php" class="nav-link">STORE</a>
+                        <a href="store_wine.php" class="nav-link">STORE</a>
                     </li>
                     <li class="nav-item">
                         <a href="" class="nav-link">QUOTE</a>
@@ -35,7 +35,7 @@
                   
                     </li>
                     <li class="nav-item ">
-                        <a href="" class="nav-link link-small">Your Cart
+                        <a href="cart.php" class="nav-link link-small">Your Cart
                             <img src="https://img.icons8.com/fluent/32/000000/fast-cart.png" />
                         </a>
 

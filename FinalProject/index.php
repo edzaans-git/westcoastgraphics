@@ -18,7 +18,7 @@
 
 
         <?php
-            include_once 'nav.php';
+            include 'nav.php';
         ?>
 
         <!--Header-->
@@ -112,7 +112,7 @@
 
 
         <?php
-            include_once 'footer.php';
+            include 'footer.php';
         ?>
     
 
