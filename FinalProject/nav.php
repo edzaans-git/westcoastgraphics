@@ -23,16 +23,16 @@
                     </li>
 
                     <li class="nav-item">
-                    <a href="signup.php" class="nav-link link-small">Sign Up
+                        <a href="signup.php" class="nav-link link-small">Sign Up
                             <img src="https://img.icons8.com/dusk/32/000000/add-user-male.png" />
                         </a>
                     </li>
                     <li class="nav-item ">
-                    <a href="login.php" class="nav-link link-small">Log In
-                        <img src="https://img.icons8.com/nolan/32/login-rounded-right.png" />
+                        <a href="login.php" class="nav-link link-small">Log In
+                            <img src="https://img.icons8.com/nolan/32/login-rounded-right.png" />
                             <!--Change icon size in the link(64px is default)-->
                         </a>
-                  
+
                     </li>
                     <li class="nav-item ">
                         <a href="cart.php" class="nav-link link-small">Your Cart

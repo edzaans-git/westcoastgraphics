@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic);
 
 
-/*! normalize.css v2.1.2 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}script{display:none!important}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:0 0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}script{display:none!important}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:0 0}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:700}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-.5em}sub{bottom:-.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
 
 
 /*= Demo */
@@ -12,11 +12,110 @@ html, body {
 }
 
 body {
+    background-color: #e9dcdf;
+    font-family: 'Open Sans Condensed', sans-serif;
 	font: 100%/1 'PT Serif', serif;
-	background: #fff;
 	color: #333;
 	border-top: 0.5em solid #cc8500;	
 }
+
+#mainNav .navbar-brand{
+    color: #f3eced;
+}
+
+#mainNav {
+    font-size: 1.5em;
+    font-weight: 100;
+}
+
+#mainNav .nav-link {
+    color: white;
+}
+
+#mainNav .link-small{
+    color: rgb(192, 192, 192);
+    font-size: 0.8em;
+}
+
+
+#mainNav .nav-link:hover {
+    color: #2c2626;
+    background-color: rgb(155, 155, 155) !important;
+}
+
+
+
+#heading-group span {
+    color:#ea1c2c;
+}
+
+#heading-group h1 {
+    font-weight: 400;
+    font-size: 3 rem;
+}
+
+#mainNav.scrolled {
+    background-color: rgb(92, 96, 107) !important;
+    transition: background-color 500ms linear;
+  }
+
+  /* Styles for main sections*/
+
+
+@media (max-width: 1200px) {
+    #heading-group h1 {
+        font-weight: 400;
+        font-size: 1 rem;
+    }
+}
+
+.header img {
+    margin-top: 2em;
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    color: #ea1c2c;
+    font-size: 2.5rem;
+}
+
+#lead {
+    color: #595c59;
+    font-size: 1.5rem;
+    line-height: 2.0;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.main-content {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    background-color: rgb(168, 168, 168);
+}
+
+.main-content h2{
+ color: rgb(255, 255, 255);
+}
+
+.main-content .btn.btn-primary {
+    background-color: #0414f3;
+}
+
+/*Card styling*/
+
+.card-body {
+    text-align: center;
+}
+
+/*Form styling*/
+
+
+
+
 
 :active, :focus {
 	outline-style: none;
@@ -41,6 +140,7 @@ h1, h2, h3, h4, h5, h6 {
 	max-width: 960px;
 	margin: 0 auto;
 	padding: 0 1em;
+	margin-bottom: 5em;
 }
 
 #masthead {
@@ -50,23 +150,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #masthead h1 {
-	margin: 0;
-	font-size: 3.5em;
-	overflow: hidden;
-	padding-left: 85px;
-	min-height: 82px;
-	line-height: 2.3;
-	background: url(../images/logo.gif) no-repeat 0 50%;
+
 	color: #900;
 	
 }
 
-.tagline {
-	float: right;
-	color: #666;
-	font-size: 14px;
-	padding-top: 3.5em;
-}
+
 
 #products ul {
 	margin: 1.5em 0;
@@ -83,12 +172,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-image {
-	margin: 0 auto 1em auto;
-	background: #000;
-	width: 150px;
-	height: 150px;
+	margin: 0 auto;
+	width: 300px;
 	overflow: hidden;
-	border-radius: 50%;
+	border-radius: 10px;
 	
 }
 
@@ -101,11 +188,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .product-name {
 	text-align: center;
-	color: #fc0;
+	color: rgb(231, 23, 103);
 	margin: 0;
 	font-size: 1.4em;
 	padding-bottom: 0.2em;
-	border-bottom: 1px dotted #666;
+	border-bottom: 1px solid #666;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
 }
@@ -113,13 +200,12 @@ h1, h2, h3, h4, h5, h6 {
 .product-price {
 	width: 4em;
 	height: 4em;
-	font-size: 1.2em;
+	font-size: 1.5em;
 	text-align: center;
 	margin: 1em auto;
-	background: #fff;
 	color: #800;
-	line-height: 4;
-	border-radius: 50%;
+	line-height: 2;
+	border-radius: 10%;
 }
 
 form.add-to-cart div,
@@ -139,8 +225,8 @@ form input.qty {
 
 .btn, a.btn {
 	display: inline-block;
-	background: #cc1400;
-	color: #fff;
+	background: #13b329;
+	color: rgb(254, 255, 254);
 	font: 1em 'PT Serif', serif;
 	padding: 0.3em 1em;
 	text-align: center;
@@ -343,4 +429,12 @@ body#checkout-page #site-info {
 #paypal-form {
 	margin: 1.5em 0;
 }
+
+
+
+
+
+
+
+
 
