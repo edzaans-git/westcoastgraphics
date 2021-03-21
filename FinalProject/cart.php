@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	<link rel="stylesheet" href="styles.css">
 	<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.shop.js"></script>
 
@@ -20,9 +21,6 @@
 	?>
 
 	<div id="site">
-		<header id="masthead">
-			<h1>Winery <span class="tagline">Wines for web developers since 1999</h1>
-		</header>
 		<div id="content">
 			<h1>Your Shopping Cart</h1>
 			<form id="shopping-cart" action="cart.php" method="get">

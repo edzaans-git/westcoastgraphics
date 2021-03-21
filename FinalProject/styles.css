@@ -95,5 +95,68 @@ h2 {
     text-align: center;
 }
 
-/*Form styling*/
+/*QUOTE Form styling*/
 
+p.two {
+    font-size: 13px;
+    line-height: 39px;
+    width: 100%;
+    display: block;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.boddy h4 {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 13px;
+}
+
+.quote-body {
+    border: 1px solid rgba(255, 255, 255, .25);
+    width: 377px;
+    background: rgba(37, 40, 42, 0.8);
+    height: 551px;
+    margin-left: 75px;
+}
+
+input#name {
+    width: 87%;
+    margin-left: 24px;
+}
+
+label.form-label {
+    color: white;
+    float: left;
+    padding: 0px 21px;
+    margin-top: 17px;
+}
+
+textarea#message {
+    height: 110px;
+        width: 87%;
+    margin-left: 24px;
+}
+
+button.button.primar {
+    border-radius: 7px;
+    width: 230px;
+    margin-left: 13px;
+    height: 45px;
+    background: gold;
+    border: 1px solid gold;
+    margin-top: 11px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p.three {
+    margin-top: 13px;
+    color: white;
+    margin-left: 18px;
+}
+
+button.button.primar:hover {
+    background: #f1d127;
+}

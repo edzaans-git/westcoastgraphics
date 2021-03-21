@@ -19,7 +19,7 @@
                         <a href="store_wine.php" class="nav-link">STORE</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">QUOTE</a>
+                        <a href="quote.php" class="nav-link">QUOTE</a>
                     </li>
 
                     <li class="nav-item">
