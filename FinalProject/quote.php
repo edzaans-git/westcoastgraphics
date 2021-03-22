@@ -20,37 +20,58 @@
     ?>
 
     <div class="container">
+
         <div class="row">
 
-            <div class="quote-body">
-                <div class="form-group">
-                    <label class="form-label" for="name">Your Name :</label>
-                    <input class="form-control" data-label="Name" required="" data-msg="Please enter name." type="text" name="name" id="name" placeholder="Enter your name" aria-required="true">
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label" for="name">Your Email :</label>
-                    <input class="form-control" data-label="Name" required="" data-msg="Please enter name." type="text" name="name" id="name" placeholder="Enter your Email" aria-required="true">
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label" for="name">Your Phone Number :</label>
-                    <input class="form-control" data-label="Name" required="" data-msg="Please enter name." type="text" name="name" id="name" placeholder="Enter Your Phone Number" aria-required="true">
-                </div>
-
-                <div class="form-group">
-                    <label class="form-label" for="message">Your quote details :</label>
-                    <textarea class="form-control" data-label="Message" required="" data-msg="Please enter your message." name="message" id="message" placeholder="Ener Any Additional Details" cols="30" rows="10" aria-required="true"></textarea>
-                </div>
-
-                <button type="submit" class="button primar">Get My Free Quote</button>
-                <p class="three">*Your details are kept confidential</p>
-
-
-
+            <!--Col start -->
+            <div class="col-md-6 mb-5 main-content">
+                <h2>Our business</h2>
+                <hr>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
             </div>
+            <!--Col end -->
+
+
+            <!--Col start -->
+            <div class="col-md-6 main-content">
+                <div class="quote-body">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Your Name :</label>
+                        <input class="form-control" data-label="Name" required="" data-msg="Please enter name." type="text" name="name" id="name" placeholder="Enter your name" aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="name">Your Email :</label>
+                        <input class="form-control" data-label="Name" required="" data-msg="Please enter name." type="text" name="name" id="name" placeholder="Enter your Email" aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="name">Your Phone Number :</label>
+                        <input class="form-control" data-label="Name" required="" data-msg="Please enter name." type="text" name="name" id="name" placeholder="Enter Your Phone Number" aria-required="true">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="message">Your quote details :</label>
+                        <textarea class="form-control" data-label="Message" required="" data-msg="Please enter your message." name="message" id="message" placeholder="Ener Any Additional Details" cols="30" rows="10" aria-required="true"></textarea>
+                    </div>
+
+                    <button type="submit" class="button primar">Get My Free Quote</button>
+                    <p class="three">*Your details are kept confidential</p>
+                </div>
+            </div>
+            <!--Col end-->
+
+
+
+
         </div>
+
     </div>
+
+
+
+
 
 
 

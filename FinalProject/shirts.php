@@ -23,101 +23,101 @@
     ?>
 
     <!--Main container-->
-    <div class="container">
 
-        <div id="site">
-            <div id="content">
 
-                <!--First row-->
-                <div class="row">
+    <div id="site">
+        <div id="content">
 
-                    <div class="col-lg-3">
+            <!--First row-->
+            <div class="row">
 
-                        <h1 class="my-4">Categories</h1>
-                        <div class="list-group">
-                            <a href="shirts.php" class="list-group-item">T Shirts</a>
-                            <a href="#" class="list-group-item">Hoodies</a>
-                            <a href="#" class="list-group-item">Jumpers</a>
-                            <a href="#" class="list-group-item">Heat transfers</a>
-                            <a href="#" class="list-group-item">Decals</a>
-                        </div>
+                <div class="col-lg-3">
 
-                    </div>
-
-                    <div class="col-lg-9 mt-4">
-                        <div class="row">
-                            <!--Product card-->
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">
-                                    <a href="#"><img class="card-img-top" src="img/430.jpg" alt=""></a>
-                                    <div class="card-body" data-name="Tshirt-1" data-price="10">
-                                        <h3 class="product-name">Tshirt 1</h3>
-                                        <p class="product-price">&euro; 10</p>
-                                        <form class="add-to-cart" action="cart.php" method="get">
-                                            <div>
-                                                <label for="qty-1">Quantity</label>
-                                                <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
-                                            </div>
-                                            <p><input type="submit" value="Add to cart" class="btn" /></p>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                                </div>
-                            </div>
-                            <!--Product card-->
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">
-                                    <a href="#"><img class="card-img-top" src="img/430.jpg" alt=""></a>
-                                    <div class="card-body" data-name="Tshirt-2" data-price="20">
-                                        <h3 class="product-name">Tshirt 2</h3>
-                                        <p class="product-price">&euro; 20</p>
-                                        <form class="add-to-cart" action="cart.php" method="get">
-                                            <div>
-                                                <label for="qty-1">Quantity</label>
-                                                <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
-                                            </div>
-                                            <p><input type="submit" value="Add to cart" class="btn" /></p>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                                </div>
-                            </div>
-                            <!--Product card-->
-                            <div class="col-lg-4 col-md-6 mb-4">
-                                <div class="card h-100">
-                                    <a href="#"><img class="card-img-top" src="img/430.jpg" alt=""></a>
-                                    <div class="card-body" data-name="Tshirt 3" data-price="30">
-                                        <h3 class="product-name">Tshirt 3</h3>
-                                        <p class="product-price">&euro; 30</p>
-                                        <form class="add-to-cart" action="cart.php" method="get">
-                                            <div>
-                                                <label for="qty-1">Quantity</label>
-                                                <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
-                                            </div>
-                                            <p><input type="submit" value="Add to cart" class="btn" /></p>
-                                        </form>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-                                </div>
-                            </div>
-                        </div>
+                    <h1 class="my-4">Categories</h1>
+                    <div class="list-group">
+                        <a href="shirts.php" class="list-group-item">T Shirts</a>
+                        <a href="#" class="list-group-item">Hoodies</a>
+                        <a href="#" class="list-group-item">Jumpers</a>
+                        <a href="#" class="list-group-item">Heat transfers</a>
+                        <a href="#" class="list-group-item">Decals</a>
                     </div>
 
                 </div>
-                <!--First row ends here-->
 
-
-
+                <div class="col-lg-9 mt-4">
+                    <div class="row">
+                        <!--Product card-->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <a href="#"><img class="card-img-top" src="img/430.jpg" alt=""></a>
+                                <div class="card-body" data-name="Tshirt-1" data-price="10">
+                                    <h3 class="product-name">Tshirt 1</h3>
+                                    <p class="product-price">&euro; 10</p>
+                                    <form class="add-to-cart" action="cart.php" method="get">
+                                        <div>
+                                            <label for="qty-1">Quantity</label>
+                                            <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Add to cart" class="btn" /></p>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                            </div>
+                        </div>
+                        <!--Product card-->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <a href="#"><img class="card-img-top" src="img/430.jpg" alt=""></a>
+                                <div class="card-body" data-name="Tshirt-2" data-price="20">
+                                    <h3 class="product-name">Tshirt 2</h3>
+                                    <p class="product-price">&euro; 20</p>
+                                    <form class="add-to-cart" action="cart.php" method="get">
+                                        <div>
+                                            <label for="qty-1">Quantity</label>
+                                            <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Add to cart" class="btn" /></p>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                            </div>
+                        </div>
+                        <!--Product card-->
+                        <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="card h-100">
+                                <a href="#"><img class="card-img-top" src="img/430.jpg" alt=""></a>
+                                <div class="card-body" data-name="Tshirt 3" data-price="30">
+                                    <h3 class="product-name">Tshirt 3</h3>
+                                    <p class="product-price">&euro; 30</p>
+                                    <form class="add-to-cart" action="cart.php" method="get">
+                                        <div>
+                                            <label for="qty-1">Quantity</label>
+                                            <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                                        </div>
+                                        <p><input type="submit" value="Add to cart" class="btn" /></p>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
+            <!--First row ends here-->
+
+
+
+
         </div>
     </div>
+
     <!--Main container ends here-->
 
 
