@@ -1,8 +1,10 @@
     <!--Navbar starts here-->
     <div class="container-fluid">
+
+
         <nav class="navbar navbar-dark bg-dark navbar-expand-md py-0 sticky-top" id="mainNav">
             <a href="index.php" class="navbar-brand">
-                SHIRTS
+                West Coast Graphics
             </a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="toggle navbar">
                 <span class="navbar-toggler-icon"></span>
@@ -24,19 +26,19 @@
 
                     <li class="nav-item">
                         <a href="signup.php" class="nav-link link-small">Sign Up
-                            <img src="https://img.icons8.com/dusk/32/000000/add-user-male.png" />
+
                         </a>
                     </li>
                     <li class="nav-item ">
                         <a href="login.php" class="nav-link link-small">Log In
-                            <img src="https://img.icons8.com/nolan/32/login-rounded-right.png" />
-                            <!--Change icon size in the link(64px is default)-->
+
+                            <!--Change icon size in the link(64px is default) <img src="https://img.icons8.com/nolan/32/login-rounded-right.png" /> -->
                         </a>
 
                     </li>
                     <li class="nav-item ">
                         <a href="cart.php" class="nav-link link-small">Your Cart
-                            <img src="https://img.icons8.com/fluent/32/000000/fast-cart.png" />
+
                         </a>
 
                     </li>
@@ -44,4 +46,6 @@
             </div>
         </nav>
 
-        <!--Navbar ends here-->
+    </div>
+
+    <!--Navbar ends here-->

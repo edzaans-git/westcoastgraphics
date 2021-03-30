@@ -1,19 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<title>Winery</title>
-	<meta charset="utf-8" />
-	<!-- Required meta tag for Bootstrap -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-	<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
-	<link rel="stylesheet" href="styles.css">
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jquery.shop.js"></script>
-</head>
+	<link rel="stylesheet" href="styles.css">
+	<title>West Coast Graphics</title>
 
 <body>
 
@@ -45,20 +43,20 @@
 					</div>
 
 					<div class="col-lg-9 mt-4">
-						<div class="row">
+						<div class="row text-center">
 							<!--Product card-->
 							<div class="col-lg-4 col-md-6 mb-4">
 								<div class="card h-100">
 									<a href="#"><img class="card-img-top" src="img/430.jpg" alt=""></a>
 									<div class="card-body" data-name="Tshirt-1" data-price="10">
 										<h3 class="product-name">Tshirt 1</h3>
-										<p class="product-price">&euro; 10</p>
+										<h2 class="product-price">&euro; 10</h2>
 										<form class="add-to-cart" action="cart.php" method="get">
 											<div>
 												<label for="qty-1">Quantity</label>
 												<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
 											</div>
-											<p><input type="submit" value="Add to cart" class="btn" /></p>
+											<p><input type="submit" value="Add to cart" class="btn btn-primary mt-3" /></p>
 										</form>
 									</div>
 								</div>
@@ -72,13 +70,13 @@
 									<a href="#"><img class="card-img-top" src="img/430.jpg" alt=""></a>
 									<div class="card-body" data-name="Tshirt-2" data-price="20">
 										<h3 class="product-name">Tshirt 2</h3>
-										<p class="product-price">&euro; 20</p>
+										<h2 class="product-price">&euro; 20</h2>
 										<form class="add-to-cart" action="cart.php" method="get">
 											<div>
 												<label for="qty-1">Quantity</label>
 												<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
 											</div>
-											<p><input type="submit" value="Add to cart" class="btn" /></p>
+											<p><input type="submit" value="Add to cart" class="btn btn-primary mt-3" /></p>
 										</form>
 									</div>
 								</div>
@@ -92,13 +90,13 @@
 									<a href="#"><img class="card-img-top" src="img/430.jpg" alt=""></a>
 									<div class="card-body" data-name="Tshirt 3" data-price="30">
 										<h3 class="product-name">Tshirt 3</h3>
-										<p class="product-price">&euro; 30</p>
+										<h2 class="product-price">&euro; 30</h2>
 										<form class="add-to-cart" action="cart.php" method="get">
 											<div>
 												<label for="qty-1">Quantity</label>
 												<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
 											</div>
-											<p><input type="submit" value="Add to cart" class="btn" /></p>
+											<p><input type="submit" value="Add to cart" class="btn btn-primary mt-3" /></p>
 										</form>
 									</div>
 								</div>

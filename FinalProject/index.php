@@ -8,8 +8,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.shop.js"></script>
   <link rel="stylesheet" href="styles.css">
-  <title>Shirt Factory</title>
+  <title>West Coast Graphics</title>
 </head>
 
 <body>
@@ -38,37 +40,35 @@
 
     <!-- /.row -->
 
-    <div class="row">
-
-      <div class="col-md-8 mb-2">
-        <h2>What We Do</h2>
+    <div class="row text-center">
+      <div class="col-md-12" id="about-us">
+        <h2 class="mt-5">What We Do</h2>
         <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
-      </div>
-      <div class="col-md-4 mb-2">
-        <h2>Contact Us</h2>
-        <hr>
-        <address>
-          <strong>West Coast Vinyl Graphics</strong>
-          <br>Galway
-          <br>Ireland
-          <br>
-        </address>
-        <address>
-          <abbr title="Phone">P:</abbr>
-          (086) 0000000
-          <br>
-          <abbr title="Email">E:</abbr>
-          <a href="mailto:info@westcoastgraphics.com">info@westcoastgraphics.com</a>
-        </address>
-      </div>
+        <p class="about-us">
+        <h4>Welcome to West Coast Graphics.</h4>
+        </p>
+        <p class="about-us"> What we offer is a wide variety of products and services to meet all your digital printing needs.
+          Our main focus is custom clothing like T Shirts, Hoodies, Polo shirts and more. Every order is unique and there are no minumum order quantity.
+          We use the highest quality clothing from companies like Gildan, Fruit Of The Loom and AWS.
+          All of our products are done using heat transfer vinyl method for simple designs and garment printing
+          for complicated or photo realistic designs. We also offer custom decals for cars, vans, laptops, mugs, furniture and more.
+          For FREE Quote fill out our Quote form with your requirements.
+        </p>
 
+        <a href="quote.php" class="btn btn-quote mb-5 mt-3">Free quote</a>
+      </div>
+    </div>
+
+    <div class="row text-center">
+      <div class="col-md-12 mb-2">
+        <h2 class="mt-3 mb-3">Shop product range</h2>
+        <hr>
+      </div>
     </div>
 
 
     <!-- /.row -->
-    <h1 class="display-5 text-gray mt-3 mb-5" id="product-h1">Shop product range</h1>
+
     <div class="row">
       <!--Col-->
       <div class="col-md-4 mb-5">
@@ -138,9 +138,120 @@
 
     </div>
 
+
+    <div class="row text-center mb-3">
+      <dov class="col-md-12">
+        <h2>Featured products</h2>
+        <hr>
+      </dov>
+    </div>
+
+    <!--Featured section starts here-->
+
+    <div id="site">
+      <div id="content">
+        <!--First row-->
+        <div class="row text-center">
+          <!--Product card-->
+          <div class="col-md-3  mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="img/Gulag.jpg" alt=""></a>
+              <div class="card-body" data-name="Gulag Tshirt" data-price="15">
+                <h3 class="product-name">Gulag T Shirt</h3>
+                <h2 class="product-price">&euro; 15</h2>
+                <form class="add-to-cart" action="cart.php" method="get">
+                  <div>
+                    <label for="qty-1">Quantity</label>
+                    <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                  </div>
+                  <p><input type="submit" value="Add to cart" class="btn btn-primary mt-3" /></p>
+                </form>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+          <!--Product card-->
+          <div class="col-md-3  mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="img/Valhalla2.jpg" alt=""></a>
+              <div class="card-body" data-name="Valhalla T Shirt" data-price="15">
+                <h3 class="product-name">Valhalla Tshirt</h3>
+                <h2 class="product-price">&euro; 20</h2>
+                <form class="add-to-cart" action="cart.php" method="get">
+                  <div>
+                    <label for="qty-1">Quantity</label>
+                    <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                  </div>
+                  <p><input type="submit" value="Add to cart" class="btn btn-primary mt-3" /></p>
+                </form>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+          <!--Product card-->
+          <div class="col-md-3  mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="img/Gocku-hoodie.jpg" alt=""></a>
+              <div class="card-body" data-name="Gocku-hoodie" data-price="30">
+                <h3 class="product-name">Gocku Hoodie</h3>
+                <h2 class="product-price">&euro; 30</h2>
+                <form class="add-to-cart" action="cart.php" method="get">
+                  <div>
+                    <label for="qty-1">Quantity</label>
+                    <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                  </div>
+                  <p><input type="submit" value="Add to cart" class="btn btn-primary mt-3" /></p>
+                </form>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+          <!--Product card-->
+          <div class="col-md-3 mb-4">
+            <div class="card h-100">
+              <a href="#"><img class="card-img-top" src="img/Gocku-hoodie.jpg" alt=""></a>
+              <div class="card-body" data-name="Gocku-hoodie" data-price="30">
+                <h3 class="product-name">Gocku Hoodie</h3>
+                <h2 class="product-price">&euro; 30</h2>
+                <form class="add-to-cart" action="cart.php" method="get">
+                  <div>
+                    <label for="qty-1">Quantity</label>
+                    <input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+                  </div>
+                  <p><input type="submit" value="Add to cart" class="btn btn-primary mt-3" /></p>
+                </form>
+              </div>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
+            </div>
+          </div>
+
+        </div>
+        <!--First row ends here-->
+
+
+
+
+      </div>
+    </div>
+
+
+
   </div>
   <!-- /.container -->
   </div>
+
+
+
+
+
 
 
   <?php

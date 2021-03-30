@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Winery</title>
+    <title>Custom Shirts</title>
     <meta charset="utf-8" />
     <!-- Required meta tag for Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
