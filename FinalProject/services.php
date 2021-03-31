@@ -22,18 +22,17 @@
     ?>
 
 
-    <section class="container-fluid px-0">
-        <div class="row align-items-center content">
+    <section class="container-fluid bg-light">
+        <div class="row align-items-center">
             <div class="col-md-6 order-2 order-md-1">
                 <img src="img/430.jpg" class="img-fluid" alt="Picture 2">
             </div>
-            <div class="col-md-6 text-center order-1 order-md-2">
+            <div class=" col-md-6 text-center order-1 order-md-2">
                 <h2 class="text-uppercase">Heat transfers</h2>
                 <img class="d-lg-inline d-none" src="https://img.icons8.com/ios/452/t-shirt--v1.png" alt="" width="50" height="50">
                 <div class="row justify-content-center">
-
                     <div class="col-10 col-lg-8">
-                        <p id="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus debitis
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus debitis
                             molestias quas
                             vero.
                             Modi
@@ -47,17 +46,17 @@
             </div>
         </div>
 
-        <div class="row align-items-center content">
+        <div class="row align-items-center">
             <div class="col-md-6 order-2 order-md-2">
                 <img src="https://images.unsplash.com/photo-1601200190687-4fec4d91c388?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=925&q=80" class="img-fluid" alt="Picture 2">
             </div>
             <div class="col-md-6 text-center order-1 order-md-1">
-                <h2 class="text-uppercase">Custom decals</h2>
+                <h2 class="text-uppercase">Custom Stickers</h2>
                 <img class="d-lg-inline d-none" src="https://img.icons8.com/ios/452/t-shirt--v1.png" alt="" width="50" height="50">
                 <div class="row justify-content-center">
 
                     <div class="col-10 col-lg-8">
-                        <p id="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus debitis
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus debitis
                             molestias quas
                             vero.
                             Modi
@@ -71,17 +70,17 @@
             </div>
         </div>
 
-        <div class="row align-items-center content">
+        <div class="row align-items-center">
             <div class="col-md-6 order-2 order-md-1">
                 <img src="img/430.jpg" class="img-fluid" alt="Picture 2">
             </div>
             <div class="col-md-6 text-center order-1 order-md-2">
-                <h2 class="text-uppercase">Heat transfers</h2>
+                <h2 class="text-uppercase">Custom vehicle decals</h2>
                 <img class="d-lg-inline d-none" src="https://img.icons8.com/ios/452/t-shirt--v1.png" alt="" width="50" height="50">
                 <div class="row justify-content-center">
 
                     <div class="col-10 col-lg-8">
-                        <p id="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus debitis
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus debitis
                             molestias quas
                             vero.
                             Modi
@@ -95,17 +94,17 @@
             </div>
         </div>
 
-        <div class="row align-items-center content">
+        <div class="row align-items-center">
             <div class="col-md-6 order-2 order-md-2">
                 <img src="https://images.unsplash.com/photo-1601200190687-4fec4d91c388?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=925&q=80" class="img-fluid" alt="Picture 2">
             </div>
             <div class="col-md-6 text-center order-1 order-md-1">
-                <h2 class="text-uppercase">Custom decals</h2>
+                <h2 class="text-uppercase">Graphic Design</h2>
                 <img class="d-lg-inline d-none" src="https://img.icons8.com/ios/452/t-shirt--v1.png" alt="" width="50" height="50">
                 <div class="row justify-content-center">
 
                     <div class="col-10 col-lg-8">
-                        <p id="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus debitis
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus debitis
                             molestias quas
                             vero.
                             Modi
