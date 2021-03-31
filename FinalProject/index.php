@@ -24,40 +24,50 @@
 
 
 
-  <div class="container">
-    <!-- Header -->
-    <header class="py-2 mb-5">
-      <div class="h-100">
-        <div class="row h-100 align-items-center">
-          <div class="col-lg-12">
-            <img src="https://novationmusic.com/sites/novation/files/TShirtsheader-2560-1000.png" class="img-fluid" alt="Responsive image">
-          </div>
+
+  <!-- Header -->
+  <header class="mx-auto">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner" style="height: 300px">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="img/office.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 img-fluid" src="img/banner.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 img-fluid" src="img/office.jpg" alt="Third slide">
         </div>
       </div>
-    </header>
-
-    <!-- Page Content -->
-
-    <!-- /.row -->
-
-    <div class="row text-center">
-      <div class="col-md-12" id="about-us">
-        <h2 class="mt-5">What We Do</h2>
-        <hr>
-        <p class="about-us">
-        <h4>Welcome to West Coast Graphics.</h4>
-        </p>
-        <p class="about-us"> What we offer is a wide variety of products and services to meet all your digital printing needs.
-          Our main focus is custom clothing like T Shirts, Hoodies, Polo shirts and more. Every order is unique and there are no minumum order quantity.
-          We use the highest quality clothing from companies like Gildan, Fruit Of The Loom and AWS.
-          All of our products are done using heat transfer vinyl method for simple designs and garment printing
-          for complicated or photo realistic designs. We also offer custom decals for cars, vans, laptops, mugs, furniture and more.
-          For FREE Quote fill out our Quote form with your requirements.
-        </p>
-
-        <a href="quote.php" class="btn btn-quote mb-5 mt-3">Free quote</a>
-      </div>
     </div>
+  </header>
+
+  <!-- Page Content -->
+
+  <!-- /.row -->
+
+  <div class="row">
+    <div class="col-md-12" id="about-us">
+      <div class="row text-center">
+        <div class="col-md-8 align-items-center mx-auto">
+          <h2 class="mt-5">What We Do</h2>
+          <hr>
+          <p class="about-us">We offer a wide variety of products and services to meet all your digital printing needs.
+            Our main focus is custom clothing like T Shirts, Hoodies, Polo shirts and more. Every order is unique and there are no minumum order quantity.
+            We use the highest quality clothing from companies like Gildan, Fruit Of The Loom and AWS.
+            All of our products are done using heat transfer vinyl method for simple designs and garment printing
+            for complicated or photo realistic designs. We also offer custom decals for cars, vans, laptops, mugs, furniture and more.
+            For FREE Quote fill out our Quote form with your requirements.
+          </p>
+
+          <a href="quote.php" class="btn btn-quote mb-5 mt-3">Free quote</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container">
 
     <div class="row text-center">
       <div class="col-md-12 mb-2">
@@ -155,7 +165,7 @@
           <!--Product card-->
           <div class="col-md-3  mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="img/Gulag.jpg" alt=""></a>
+              <a href="#"><img class="card-img-top img-fluid" src="img/Gulag.jpg" alt=""></a>
               <div class="card-body" data-name="Gulag Tshirt" data-price="15">
                 <h3 class="product-name">Gulag T Shirt</h3>
                 <h2 class="product-price">&euro; 15</h2>
@@ -168,14 +178,11 @@
                 </form>
               </div>
             </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
           </div>
           <!--Product card-->
           <div class="col-md-3  mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="img/Valhalla2.jpg" alt=""></a>
+              <a href="#"><img class="card-img-top img-fluid" src="img/Valhalla2.jpg" alt=""></a>
               <div class="card-body" data-name="Valhalla T Shirt" data-price="15">
                 <h3 class="product-name">Valhalla Tshirt</h3>
                 <h2 class="product-price">&euro; 20</h2>
@@ -188,14 +195,11 @@
                 </form>
               </div>
             </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-            </div>
           </div>
           <!--Product card-->
           <div class="col-md-3  mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="img/Gocku-hoodie.jpg" alt=""></a>
+              <a href="#"><img class="card-img-top img-fluid" src="img/Gocku-hoodie.jpg" alt=""></a>
               <div class="card-body" data-name="Gocku-hoodie" data-price="30">
                 <h3 class="product-name">Gocku Hoodie</h3>
                 <h2 class="product-price">&euro; 30</h2>
@@ -207,15 +211,12 @@
                   <p><input type="submit" value="Add to cart" class="btn btn-primary mt-3" /></p>
                 </form>
               </div>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
             </div>
           </div>
           <!--Product card-->
           <div class="col-md-3 mb-4">
             <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="img/Gocku-hoodie.jpg" alt=""></a>
+              <a href="#"><img class="card-img-top img-fluid" src="img/Gocku-hoodie.jpg" alt=""></a>
               <div class="card-body" data-name="Gocku-hoodie" data-price="30">
                 <h3 class="product-name">Gocku Hoodie</h3>
                 <h2 class="product-price">&euro; 30</h2>
@@ -227,9 +228,6 @@
                   <p><input type="submit" value="Add to cart" class="btn btn-primary mt-3" /></p>
                 </form>
               </div>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
             </div>
           </div>
 
