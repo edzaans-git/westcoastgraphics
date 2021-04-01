@@ -7,9 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
   <script type="text/javascript" src="js/jquery.shop.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
   <link rel="stylesheet" href="styles.css">
   <title>West Coast Graphics</title>
 </head>
@@ -63,7 +67,6 @@
           <a href="quote.php" class="btn btn-quote mb-5 mt-3">Free quote</a>
         </div>
       </div>
-
     </div>
   </div>
 
@@ -233,20 +236,62 @@
 
         </div>
         <!--First row ends here-->
-
-
-
-
       </div>
     </div>
-
-
-
   </div>
   <!-- /.container -->
+
+
+  <div class="row">
+    <div class="col-md-12" id="about-us">
+      <div class="row text-center">
+        <div class="col-md-8 px-0 align-items-center mx-auto px-5">
+          <h2 class="mt-5">Drop Us A Line</h2>
+          <hr>
+          <!--Contact page column here-->
+          <section class="page-section" id="contact">
+            <div class="contact_section">
+              <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                <div class="row align-items-stretch">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group">
+                      <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address." />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="form-group mb-md-0">
+                      <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." />
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group form-group-textarea mb-md-0">
+                      <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
+                      <p class="help-block text-danger"></p>
+                    </div>
+                  </div>
+                </div>
+                <a href="quote.php" class="btn btn-quote mb-5 mt-3">Send Message</a>
+              </form>
+            </div>
+          </section>
+          <!--Contact page column ends here-->
+
+        </div>
+      </div>
+    </div>
   </div>
 
 
+
+
+  </div>
+
+  </div>
+  </div>
 
 
 

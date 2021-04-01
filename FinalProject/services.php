@@ -24,7 +24,7 @@
 
     <section class="container-fluid bg-light">
         <div class="row align-items-center">
-            <div class="col-md-6 order-2 order-md-1">
+            <div class="col-md-6 order-2 order-md-1 pr-0">
                 <img src="img/430.jpg" class="img-fluid" alt="Picture 2">
             </div>
             <div class=" col-md-6 text-center order-1 order-md-2">
@@ -47,7 +47,7 @@
         </div>
 
         <div class="row align-items-center">
-            <div class="col-md-6 order-2 order-md-2">
+            <div class="col-md-6 order-2 order-md-2 pl-0">
                 <img src="https://images.unsplash.com/photo-1601200190687-4fec4d91c388?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=925&q=80" class="img-fluid" alt="Picture 2">
             </div>
             <div class="col-md-6 text-center order-1 order-md-1">
@@ -71,7 +71,7 @@
         </div>
 
         <div class="row align-items-center">
-            <div class="col-md-6 order-2 order-md-1">
+            <div class="col-md-6 order-2 order-md-1 pr-0">
                 <img src="img/430.jpg" class="img-fluid" alt="Picture 2">
             </div>
             <div class="col-md-6 text-center order-1 order-md-2">
@@ -95,7 +95,7 @@
         </div>
 
         <div class="row align-items-center">
-            <div class="col-md-6 order-2 order-md-2">
+            <div class="col-md-6 order-2 order-md-2 pl-0">
                 <img src="https://images.unsplash.com/photo-1601200190687-4fec4d91c388?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=925&q=80" class="img-fluid" alt="Picture 2">
             </div>
             <div class="col-md-6 text-center order-1 order-md-1">
