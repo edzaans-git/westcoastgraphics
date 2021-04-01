@@ -234,3 +234,7 @@ button.button.primar:hover {
 .copyrights {
     color: #FFF200;
 }
+
+.contact_details {
+    border: 2px solid white;
+}

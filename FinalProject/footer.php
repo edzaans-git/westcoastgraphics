@@ -7,25 +7,22 @@
          <div class="row">
              <!-- Grid column -->
              <div class="col-md-4 col-lg-4 mx-auto mt-3">
-                 <img src="img/WestCoastLogo.png" class="img-fluid" alt="">
+                 <img src="img/WestCoastLogo.png" class="img-fluid" alt="West Coast Logo">
              </div>
              <!-- Grid column -->
 
 
              <!-- Grid column -->
              <div class=" col-md-2 mx-auto mt-3">
-                 <h6 class="text-uppercase mb-4 font-weight-bold">Contact US</h6>
+                 <h6 class="text-uppercase mb-4 font-weight-bold contact_details">Contact US</h6>
                  <p>
-                     <a class="text-white">Store</a>
+                     <a class="text-white">West End, Galway, Ireland</a>
                  </p>
                  <p>
-                     <a class="text-white">Payment</a>
+                     <a class="text-white">info@westcoastgraphics.ie</a>
                  </p>
                  <p>
-                     <a class="text-white">Shipping</a>
-                 </p>
-                 <p>
-                     <a class="text-white">About Us</a>
+                     <a class="text-white">0862001546</a>
                  </p>
              </div>
              <!-- Grid column -->
@@ -33,7 +30,7 @@
 
              <!-- Grid column -->
              <div class=" col-md-2 mx-auto mt-3">
-                 <h6 class="text-uppercase mb-4 font-weight-bold">Links</h6>
+                 <h6 class="text-uppercase mb-4 font-weight-bold contact_details">Links</h6>
                  <p>
                      <a class="text-white">Store</a>
                  </p>
@@ -52,7 +49,7 @@
 
              <!-- Grid column -->
              <div class="col-md-2 mx-auto mt-3">
-                 <h6 class="text-uppercase mb-4 font-weight-bold">Products</h6>
+                 <h6 class="text-uppercase mb-4 font-weight-bold contact_details">Products</h6>
                  <p>
                      <a class="text-white">T-Shirts</a>
                  </p>
@@ -70,7 +67,7 @@
 
              <!-- Grid column -->
              <div class="col-md-2 mx-auto mt-3">
-                 <h6 class="text-uppercase mb-4 font-weight-bold">Follow Us</h6>
+                 <h6 class="text-uppercase mb-4 font-weight-bold contact_details">Follow Us</h6>
                  <button type="button" class="btn btn-primary btn-rounded btn-icon"> <i class="bi bi-facebook"></i> </button>
                  <button type="button" class="btn btn-primary btn-rounded btn-icon"> <i class="bi bi-instagram" style="color: purple;"></i></button>
                  <button type="button" class="btn btn-primary btn-rounded btn-icon"> <i class="bi bi-twitter" style="color: yellow;"></i> </button>
