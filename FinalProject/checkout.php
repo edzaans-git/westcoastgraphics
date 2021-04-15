@@ -25,8 +25,9 @@ include 'nav.php';
 ?>
 
 <body id="checkout-page">
-	<div id="site">
+	<div class="mx-3" id="site">
 		<div id="content">
+
 			<h1>Checkout</h1>
 			<table id="checkout-cart" class="shopping-cart">
 				<thead>

@@ -26,33 +26,98 @@
 	?>
 
 	<!--Main container-->
-	<div class="container">
 
-		<div id="site">
-			<div id="content">
 
-				<!--First row-->
-				<div class="row">
 
-					<div class="col-lg-3">
 
-						<h1 class="my-4">Categories</h1>
-						<div class="list-group">
-							<a href="shirts.php" class="list-group-item">T Shirts</a>
-							<a href="#" class="list-group-item">Hoodies</a>
-							<a href="#" class="list-group-item">Jumpers</a>
-							<a href="#" class="list-group-item">Heat transfers</a>
-							<a href="#" class="list-group-item">Decals</a>
-						</div>
+	<div id="site">
+		<div id="content">
 
-					</div>
+			<!--First row-->
+			<div class="row mx-auto">
 
-					<div class="col-lg-9 mt-4">
+				<div class="col-lg-2">
+
+					<?php
+					include 'includes/categories.php';
+					?>
+
+					<div class="col-lg-10 mt-4 mt-5">
 						<div class="row text-center">
 							<!--Product card-->
 							<div class="col-lg-4 col-md-6 mb-4">
 								<div class="card h-100">
-									<a href="#"><img class="card-img-top" src="img/430.jpg" alt=""></a>
+									<a href="#"><img class="card-img-top img-fluid" src="img/Wheelie.png" alt="Wheelie Shirt"></a>
+									<div class="card-body" data-name="Wheelie T Shirt" data-price="15">
+										<h3 class="product-name">Wheelie T Shirt</h3>
+										<h2 class="product-price">&euro; 15</h2>
+										<form class="add-to-cart" action="cart.php" method="get">
+											<div>
+												<label for="qty-1">Quantity</label>
+												<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+											</div>
+											<p><input type="submit" value="Add to cart" class="btn btn-primary mt-3" /></p>
+										</form>
+									</div>
+								</div>
+
+							</div>
+							<!--Product card-->
+							<div class="col-lg-4 col-md-6 mb-4">
+								<div class="card h-100">
+									<a href="#"><img class="card-img-top img-fluid" src="img/StraightLockdownShirt.jpg" alt="Custom Shirt"></a>
+									<div class="card-body" data-name="Lockdown T Shirt" data-price="15">
+										<h3 class="product-name">Lockdown T Shirt</h3>
+										<h2 class="product-price">&euro; 15</h2>
+										<form class="add-to-cart" action="cart.php" method="get">
+											<div>
+												<label for="qty-1">Quantity</label>
+												<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+											</div>
+											<p><input type="submit" value="Add to cart" class="btn btn-primary mt-3" /></p>
+										</form>
+									</div>
+								</div>
+
+							</div>
+							<!--Product card-->
+							<div class="col-lg-4 col-md-6 mb-4">
+								<div class="card h-100">
+									<a href="#"><img class="card-img-top img-fluid" src="img/MonkiiWhite.png" alt="Custom Shirt"></a>
+									<div class="card-body" data-name="Monkii T Shirt" data-price="15">
+										<h3 class="product-name">Monkii T Shirt</h3>
+										<h2 class="product-price">&euro; 15</h2>
+										<form class="add-to-cart" action="cart.php" method="get">
+											<div>
+												<label for="qty-1">Quantity</label>
+												<input type="text" name="qty-1" id="qty-1" class="qty" value="1" />
+											</div>
+											<p><input type="submit" value="Add to cart" class="btn btn-primary mt-3" /></p>
+										</form>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!--First row ends here-->
+
+				<!--Second row starts here-->
+
+				<div class="row mt-5 mx-auto">
+
+					<div class="col-lg-2">
+
+					</div>
+
+					<div class="col-lg-10 mt-4">
+						<div class="row text-center">
+							<!--Product card-->
+							<div class="col-lg-4 col-md-6 mb-4">
+								<div class="card h-100">
+									<a href="#"><img class="card-img-top img-fluid" src="img/430.jpg" alt=""></a>
 									<div class="card-body" data-name="Tshirt-1" data-price="10">
 										<h3 class="product-name">Tshirt 1</h3>
 										<h2 class="product-price">&euro; 10</h2>
@@ -65,14 +130,11 @@
 										</form>
 									</div>
 								</div>
-								<div class="card-footer">
-									<small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-								</div>
 							</div>
 							<!--Product card-->
 							<div class="col-lg-4 col-md-6 mb-4">
 								<div class="card h-100">
-									<a href="#"><img class="card-img-top" src="img/430.jpg" alt=""></a>
+									<a href="#"><img class="card-img-top img-fluid" src="img/430.jpg" alt=""></a>
 									<div class="card-body" data-name="Tshirt-2" data-price="20">
 										<h3 class="product-name">Tshirt 2</h3>
 										<h2 class="product-price">&euro; 20</h2>
@@ -85,14 +147,11 @@
 										</form>
 									</div>
 								</div>
-								<div class="card-footer">
-									<small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-								</div>
 							</div>
 							<!--Product card-->
 							<div class="col-lg-4 col-md-6 mb-4">
 								<div class="card h-100">
-									<a href="#"><img class="card-img-top" src="img/430.jpg" alt=""></a>
+									<a href="#"><img class="card-img-top img-fluid" src="img/430.jpg" alt=""></a>
 									<div class="card-body" data-name="Tshirt 3" data-price="30">
 										<h3 class="product-name">Tshirt 3</h3>
 										<h2 class="product-price">&euro; 30</h2>
@@ -105,28 +164,18 @@
 										</form>
 									</div>
 								</div>
-								<div class="card-footer">
-									<small class="text-muted">&#9733; &#9733; &#9733; &#9733; &#9734;</small>
-								</div>
 							</div>
 						</div>
 					</div>
-
 				</div>
-				<!--First row ends here-->
-
-
-
 
 			</div>
+			<!--Second row ends here-->
+
 		</div>
 	</div>
+
 	<!--Main container ends here-->
-
-
-
-
-
 	<footer>
 		<?php
 		include 'footer.php';

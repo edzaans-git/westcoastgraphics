@@ -24,7 +24,7 @@
 	include 'nav.php';
 	?>
 
-	<div id="site">
+	<div class="mx-3" id="site">
 		<div id="content">
 			<h1>Your Shopping Cart</h1>
 			<form id="shopping-cart" action="cart.php" method="get">

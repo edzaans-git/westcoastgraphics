@@ -25,54 +25,57 @@
     include 'nav.php';
     ?>
 
-    <div class="container">
-
+    <div class="container-fluid">
         <div class="row">
-
-            <!--Col start -->
-            <div class="col-md-6 mb-5 main-content">
-                <h2>Our business</h2>
-                <hr>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam laboriosam. Repellat explicabo, maiores!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+            <div class="col-md-12 text-center ">
+                <h2 class="mt-3">Get a free quote</h2>
             </div>
-            <!--Col end -->
+        </div>
 
+        <div class="row" id="about-us">
+            <div class="col-md-12 text-center pt-5 ">
 
-            <!--Col start -->
-            <div class="col-md-6 main-content">
-                <div class="quote-body">
-                    <div class="form-group">
-                        <label class="form-label" for="name">Your Name :</label>
-                        <input class="form-control" data-label="Name" required="" data-msg="Please enter name." type="text" name="name" id="name" placeholder="Enter your name" aria-required="true">
-                    </div>
+                <p class="about-us">We offer a wide variety of products and services to meet all your digital printing needs.
+                    Our main focus is custom clothing like T Shirts, Hoodies, Polo shirts and more. Every order is unique and there are no minumum order quantity.
+                    We use the highest quality clothing from companies like Gildan, Fruit Of The Loom and AWS.
+                    All of our products are done using heat transfer vinyl method for simple designs and garment printing
+                    for complicated or photo realistic designs. We also offer custom decals for cars, vans, laptops, mugs, furniture and more.
+                    For FREE Quote fill out our Quote form with your requirements.
+                </p>
+            </div>
+        </div>
 
-                    <div class="form-group">
-                        <label class="form-label" for="name">Your Email :</label>
-                        <input class="form-control" data-label="Name" required="" data-msg="Please enter name." type="text" name="name" id="name" placeholder="Enter your Email" aria-required="true">
-                    </div>
+        <div class="row d-flex text-center" id="about-us">
 
-                    <div class="form-group">
-                        <label class="form-label" for="name">Your Phone Number :</label>
-                        <input class="form-control" data-label="Name" required="" data-msg="Please enter name." type="text" name="name" id="name" placeholder="Enter Your Phone Number" aria-required="true">
-                    </div>
-
-                    <div class="form-group">
-                        <label class="form-label" for="message">Your quote details :</label>
-                        <textarea class="form-control" data-label="Message" required="" data-msg="Please enter your message." name="message" id="message" placeholder="Ener Any Additional Details" cols="30" rows="10" aria-required="true"></textarea>
-                    </div>
-
-                    <button type="submit" class="button primar">Get My Free Quote</button>
-                    <p class="three">*Your details are kept confidential</p>
+            <div class="col-md-6 pt-5 text-center">
+                <div class="form-group">
+                    <input class="form-control" data-label="Name" required="" data-msg="Please enter name." type="text" name="name" id="name" placeholder="Enter your name" aria-required="true">
                 </div>
+
+                <div class="form-group">
+                    <input class="form-control" data-label="Name" required="" data-msg="Please enter name." type="text" name="name" id="name" placeholder="Enter your Email" aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <input class="form-control" data-label="Name" required="" data-msg="Please enter name." type="text" name="name" id="name" placeholder="Enter Your Phone Number" aria-required="true">
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-control" data-label="Message" required="" data-msg="Please enter your message." name="message" id="message" placeholder="Ener Any Additional Details" cols="30" rows="10" aria-required="true"></textarea>
+                </div>
+
+                <button type="submit" class="button primar">Get My Free Quote</button>
+                <p class="three">*Your details are kept confidential</p>
+                <!--Col end-->
             </div>
-            <!--Col end-->
-
-
-
 
         </div>
 
+
+
+
+
+    </div>
     </div>
 
 

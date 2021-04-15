@@ -18,6 +18,10 @@ body {
 	color: #333;	
 }
 
+.services {
+	font-size: 2em!important;
+}
+
 #mainNav .navbar-brand{
     color: #f3eced;
 }

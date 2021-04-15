@@ -11,11 +11,9 @@
         </button>
         <div class="collapse navbar-collapse  justify-content-end" id="navLinks">
             <ul class="navbar-nav  justify-content-end ">
+
                 <li class="nav-item px-2">
-                    <a href="index.php" class="nav-link ">HOME</a>
-                </li>
-                <li class="nav-item px-2">
-                    <a href="services.php" class="nav-link">SERVICES</a>
+                    <a href="index.php" class="nav-link">SERVICES</a>
                 </li>
                 <li class="nav-item px-2">
                     <a href="store_wine.php" class="nav-link">STORE</a>
