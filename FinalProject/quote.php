@@ -84,21 +84,6 @@
                                         </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
                                     </div>
                             </div>
                             <button type="submit" class="button primar">Get My Free Quote</button>
@@ -114,13 +99,6 @@
     </div>
 
     </div>
-
-
-
-
-
-
-
 
     <?php
     include 'footer.php';

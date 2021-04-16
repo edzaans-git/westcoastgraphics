@@ -21,6 +21,9 @@
                 <li class="nav-item px-2">
                     <a href="quote.php" class="nav-link">QUOTE</a>
                 </li>
+                <li class="nav-item px-2">
+                    <a href="contact.php" class="nav-link">CONTACT</a>
+                </li>
 
                 <li class="nav-item">
                     <a href="signup.php" class="nav-link link-small pt-3">Sign Up
