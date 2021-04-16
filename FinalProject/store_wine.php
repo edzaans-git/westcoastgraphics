@@ -45,7 +45,7 @@
 					<div class="col-lg-10 mt-4 mt-5">
 						<div class="row text-center">
 							<!--Product card-->
-							<div class="col-lg-4 col-md-6 mb-4">
+							<div class="col-md-4 mb-4">
 								<div class="card h-100">
 									<a href="#"><img class="card-img-top img-fluid" src="img/Wheelie.png" alt="Wheelie Shirt"></a>
 									<div class="card-body" data-name="Wheelie T Shirt" data-price="15">
@@ -63,7 +63,7 @@
 
 							</div>
 							<!--Product card-->
-							<div class="col-lg-4 col-md-6 mb-4">
+							<div class="col-md-4 mb-4">
 								<div class="card h-100">
 									<a href="#"><img class="card-img-top img-fluid" src="img/StraightLockdownShirt.jpg" alt="Custom Shirt"></a>
 									<div class="card-body" data-name="Lockdown T Shirt" data-price="15">
@@ -81,7 +81,7 @@
 
 							</div>
 							<!--Product card-->
-							<div class="col-lg-4 col-md-6 mb-4">
+							<div class="col-md-4 mb-4">
 								<div class="card h-100">
 									<a href="#"><img class="card-img-top img-fluid" src="img/MonkiiWhite.png" alt="Custom Shirt"></a>
 									<div class="card-body" data-name="Monkii T Shirt" data-price="15">
@@ -115,7 +115,7 @@
 					<div class="col-lg-10 mt-4">
 						<div class="row text-center">
 							<!--Product card-->
-							<div class="col-lg-4 col-md-6 mb-4">
+							<div class="col-md-4 mb-4">
 								<div class="card h-100">
 									<a href="#"><img class="card-img-top img-fluid" src="img/430.jpg" alt=""></a>
 									<div class="card-body" data-name="Tshirt-1" data-price="10">
@@ -132,7 +132,7 @@
 								</div>
 							</div>
 							<!--Product card-->
-							<div class="col-lg-4 col-md-6 mb-4">
+							<div class="col-md-4 mb-4">
 								<div class="card h-100">
 									<a href="#"><img class="card-img-top img-fluid" src="img/430.jpg" alt=""></a>
 									<div class="card-body" data-name="Tshirt-2" data-price="20">
@@ -149,7 +149,7 @@
 								</div>
 							</div>
 							<!--Product card-->
-							<div class="col-lg-4 col-md-6 mb-4">
+							<div class="col-md-4 mb-4">
 								<div class="card h-100">
 									<a href="#"><img class="card-img-top img-fluid" src="img/430.jpg" alt=""></a>
 									<div class="card-body" data-name="Tshirt 3" data-price="30">

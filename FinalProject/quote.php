@@ -26,57 +26,95 @@
     ?>
 
     <div class="container-fluid">
+
         <div class="row">
-            <div class="col-md-12 text-center ">
-                <h2 class="mt-3">Get a free quote</h2>
+            <div class="col-md-12" id="about-us">
+                <div class="row text-center">
+                    <div class="col-md-8 px-0 align-items-center mx-auto px-5">
+                        <h2 class="mt-5">Get a free Quote</h2>
+                        <hr>
+                        <p class="about-us">We offer a wide variety of products and services to meet all your digital printing needs.
+                            Our main focus is custom clothing like T Shirts, Hoodies, Polo shirts and more. Every order is unique and there are no minumum order quantity.
+                            We use the highest quality clothing from companies like Gildan, Fruit Of The Loom and AWS.
+                            All of our products are done using heat transfer vinyl method for simple designs and garment printing
+                            for complicated or photo realistic designs. We also offer custom decals for cars, vans, laptops, mugs, furniture and more.
+                            For FREE Quote fill out our Quote form with your requirements.
+                        </p>
+                        <!--Contact page column here-->
+                        <section class="page-section" id="contact">
+                            <div class="contact_section">
+
+                                <form action="quote-success.php" id="contactForm" name="sentMessage" novalidate="novalidate" method="post">
+                                    <div class="row align-items-stretch">
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input class="form-control" name="name" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                            <div class="form-group">
+                                                <input class="form-control" name="email" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address." />
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                            <div class="form-group mb-md-0">
+                                                <input class="form-control" name="phone" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." />
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text bg-white px-4 border-md border-right-0 select">
+                                                    <i class="fa fa-user text-muted" required>Please pick your service</i>
+                                                </span>
+                                                <select name="myselectbox" class="select-input" required>
+                                                    <option name="default" value="Default">Default</option>
+                                                    <option name="clothing" value="Clothing">Clothing</option>
+                                                    <option name="stickers" value="Stickers">Stickers</option>
+                                                    <option name="decals" value="Decals">Decals</option>
+                                                    <option name="design" value="Design">Design</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text bg-white px-4 border-md border-right-0 select">
+                                                    <i class="fa fa-user text-muted" required>When you need it by</i>
+                                                </span>
+                                                <input class="form-control select-input" type="date" name="date" id="date" placeholder="Timeframe *" required="required" data-validation-required-message="Please enter date you need it by ." />
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    </div>
+                            </div>
+                            <button type="submit" class="button primar">Get My Free Quote</button>
+                            <p class="three">*Your details are kept confidential</p>
+                            </form>
+                    </div>
+                    </section>
+                    <!--Contact page column ends here-->
+
+                </div>
             </div>
         </div>
-
-        <div class="row" id="about-us">
-            <div class="col-md-12 text-center pt-5 ">
-
-                <p class="about-us">We offer a wide variety of products and services to meet all your digital printing needs.
-                    Our main focus is custom clothing like T Shirts, Hoodies, Polo shirts and more. Every order is unique and there are no minumum order quantity.
-                    We use the highest quality clothing from companies like Gildan, Fruit Of The Loom and AWS.
-                    All of our products are done using heat transfer vinyl method for simple designs and garment printing
-                    for complicated or photo realistic designs. We also offer custom decals for cars, vans, laptops, mugs, furniture and more.
-                    For FREE Quote fill out our Quote form with your requirements.
-                </p>
-            </div>
-        </div>
-
-        <div class="row d-flex text-center" id="about-us">
-
-            <div class="col-md-6 pt-5 text-center">
-                <div class="form-group">
-                    <input class="form-control" data-label="Name" required="" data-msg="Please enter name." type="text" name="name" id="name" placeholder="Enter your name" aria-required="true">
-                </div>
-
-                <div class="form-group">
-                    <input class="form-control" data-label="Name" required="" data-msg="Please enter name." type="text" name="name" id="name" placeholder="Enter your Email" aria-required="true">
-                </div>
-
-                <div class="form-group">
-                    <input class="form-control" data-label="Name" required="" data-msg="Please enter name." type="text" name="name" id="name" placeholder="Enter Your Phone Number" aria-required="true">
-                </div>
-
-                <div class="form-group">
-                    <textarea class="form-control" data-label="Message" required="" data-msg="Please enter your message." name="message" id="message" placeholder="Ener Any Additional Details" cols="30" rows="10" aria-required="true"></textarea>
-                </div>
-
-                <button type="submit" class="button primar">Get My Free Quote</button>
-                <p class="three">*Your details are kept confidential</p>
-                <!--Col end-->
-            </div>
-
-        </div>
-
-
-
-
+    </div>
 
     </div>
-    </div>
+
 
 
 

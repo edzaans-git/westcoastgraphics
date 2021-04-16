@@ -364,3 +364,11 @@ button.button.primar:hover {
 #pricing #shipping {
 	margin: 1em 0;
 }
+
+.select {
+    width: 55%;
+}
+
+.select-input {
+    width: 45%;
+}

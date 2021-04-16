@@ -1,73 +1,65 @@
+<?php
+
+session_start();
+
+if (isset($_SESSION['user_id'])) {
+    header("Location: /");
+}
+
+require 'database.php';
+
+if (!empty($_POST['email']) && !empty($_POST['password'])) :
+
+    $records = $conn->prepare('SELECT id,email,password FROM users WHERE email = :email');
+    $records->bindParam(':email', $_POST['email']);
+    $records->execute();
+    $results = $records->fetch(PDO::FETCH_ASSOC);
+
+    $message = '';
+
+    if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
+
+        $_SESSION['user_id'] = $results['id'];
+        header("Location: /");
+    } else {
+        $message = 'Sorry, those credentials do not match';
+    }
+
+endif;
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-    <script type="text/javascript" src="js/jquery.shop.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="styles.css">
-    <title>West Coast Graphics</title>
+    <title>Login Below</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
+    <div class="header">
+        <a href="/">Your App Name</a>
+    </div>
 
+    <?php if (!empty($message)) : ?>
+        <p><?= $message ?></p>
+    <?php endif; ?>
 
+    <h1>Login</h1>
+    <span>or <a href="register.php">register here</a></span>
 
-    <?php
-    include_once 'nav.php';
-    ?>
+    <form action="login.php" method="POST">
 
-    <section class="signup-form">
+        <input type="text" placeholder="Enter your email" name="email">
+        <input type="password" placeholder="and password" name="password">
 
-        <h1>This is login page</h1>
-        <form action="includes/login.inc.php" method="post">
-            <input type="text" name="name" placeholder="Username/email...">
-            <input type="password" name="password" placeholder="Password ...">
-            <button type="submit" name="submit">Log In</button>
-        </form>
+        <input type="submit">
 
-    </section>
-
-
-    <?php
-    include_once 'footer.php';
-    ?>
-
-
-
-
-
-
-
-
-
-
-    <!--Bootstrap JS,jQuery and Popper here-->
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
-
-    <script>
-        $(function() {
-            $(document).scroll(function() {
-                var $nav = $("#mainNav");
-                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-            });
-        });
-    </script>
+    </form>
 
 </body>
-
 
 </html>
