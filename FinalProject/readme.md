@@ -18,7 +18,7 @@ Bear in mind that there are a few things you need to change on the main `jquery.
 * The way shipping charges are calculated.
 
 ## To run this project
-You have 3 options. 
-1. Clone this project and run it locally
-2. Clone this project to a Web Server and run it remotely
-3. Fork this project and access it via your GitHub Pages
+
+1.Create database localy or hosted - MySql files for both Customer and User login contains code to create DB.
+2.Download entire folder and run it locally or hosted after DB is set up - it will ask for login/register details.
+
