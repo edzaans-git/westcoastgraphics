@@ -1,3 +1,25 @@
+<?php
+
+session_start();
+
+require 'database.php';
+
+if (isset($_SESSION['user_id'])) {
+
+    $records = $conn->prepare('SELECT id,email,password FROM users WHERE id = :id');
+    $records->bindParam(':id', $_SESSION['user_id']);
+    $records->execute();
+    $results = $records->fetch(PDO::FETCH_ASSOC);
+
+    $user = NULL;
+
+    if (count($results) > 0) {
+        $user = $results;
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,15 +64,16 @@
                     include 'includes/categories.php';
                     ?>
 
-                    <div class="col-lg-10 mt-4 mt-5">
+                    <div class="col-lg-10 mt-4">
                         <div class="row text-center">
                             <!--Product card-->
-                            <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-md-4 mb-4">
                                 <div class="card h-100">
-                                    <a href="#"><img class="card-img-top img-fluid" src="img/Wheelie.png" alt="Wheelie Shirt"></a>
-                                    <div class="card-body" data-name="Wheelie T Shirt" data-price="15">
-                                        <h3 class="product-name">Wheelie T Shirt</h3>
-                                        <h2 class="product-price">&euro; 15</h2>
+                                    <a href="#"><img class="card-img-top img-fluid" src="img/custom-hoodie10.jpg" alt="Custom Hoodie"></a>
+                                    <a href="" onclick="window.open('img/custom-hoodie10.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">Click here to expand</a>
+                                    <div class="card-body" data-name="Custom text hoodie" data-price="40">
+                                        <h3 class="product-name">Custom text hoodie</h3>
+                                        <h2 class="product-price">&euro; 40</h2>
                                         <form class="add-to-cart" action="cart.php" method="get">
                                             <div>
                                                 <label for="qty-1">Quantity</label>
@@ -63,12 +86,13 @@
 
                             </div>
                             <!--Product card-->
-                            <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-md-4 mb-4">
                                 <div class="card h-100">
-                                    <a href="#"><img class="card-img-top img-fluid" src="img/StraightLockdownShirt.jpg" alt="Custom Shirt"></a>
-                                    <div class="card-body" data-name="Lockdown T Shirt" data-price="15">
-                                        <h3 class="product-name">Lockdown T Shirt</h3>
-                                        <h2 class="product-price">&euro; 15</h2>
+                                    <a href="#"><img class="card-img-top img-fluid" src="img/custom-hoodie8.jpg" alt="Custom Hoodie"></a>
+                                    <a href="" onclick="window.open('img/custom-hoodie8.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">Click here to expand</a>
+                                    <div class="card-body" data-name="Custom text hoodie" data-price="40">
+                                        <h3 class="product-name">Custom text hoodie</h3>
+                                        <h2 class="product-price">&euro; 40</h2>
                                         <form class="add-to-cart" action="cart.php" method="get">
                                             <div>
                                                 <label for="qty-1">Quantity</label>
@@ -81,12 +105,14 @@
 
                             </div>
                             <!--Product card-->
-                            <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-md-4 mb-4 d-none d-md-block">
+                                <!--d-md-block HIDES item at given viewport-->
                                 <div class="card h-100">
-                                    <a href="#"><img class="card-img-top img-fluid" src="img/MonkiiWhite.png" alt="Custom Shirt"></a>
-                                    <div class="card-body" data-name="Monkii T Shirt" data-price="15">
-                                        <h3 class="product-name">Monkii T Shirt</h3>
-                                        <h2 class="product-price">&euro; 15</h2>
+                                    <a href="#"><img class="card-img-top img-fluid" src="img/custom-hoodie11.jpg" alt="Custom Hoodie"></a>
+                                    <a href="" onclick="window.open('img/custom-hoodie11.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">Click here to expand</a>
+                                    <div class="card-body" data-name="Custom text hoodie" data-price="40">
+                                        <h3 class="product-name">Custom text hoodie</h3>
+                                        <h2 class="product-price">&euro; 40</h2>
                                         <form class="add-to-cart" action="cart.php" method="get">
                                             <div>
                                                 <label for="qty-1">Quantity</label>
@@ -98,6 +124,7 @@
                                 </div>
 
                             </div>
+
                         </div>
                     </div>
 
@@ -115,12 +142,13 @@
                     <div class="col-lg-10 mt-4">
                         <div class="row text-center">
                             <!--Product card-->
-                            <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-md-4 mb-4">
                                 <div class="card h-100">
-                                    <a href="#"><img class="card-img-top img-fluid" src="img/430.jpg" alt=""></a>
-                                    <div class="card-body" data-name="Tshirt-1" data-price="10">
-                                        <h3 class="product-name">Tshirt 1</h3>
-                                        <h2 class="product-price">&euro; 10</h2>
+                                    <a href="#"><img class="card-img-top img-fluid" src="img/custom-hoodie11.jpg" alt="Custom Hoodie"></a>
+                                    <a href="" onclick="window.open('img/img/custom-hoodie11.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">Click here to expand</a>
+                                    <div class="card-body" data-name="Custom text hoodie" data-price="40">
+                                        <h3 class="product-name">Custom text hoodie</h3>
+                                        <h2 class="product-price">&euro; 40</h2>
                                         <form class="add-to-cart" action="cart.php" method="get">
                                             <div>
                                                 <label for="qty-1">Quantity</label>
@@ -130,14 +158,16 @@
                                         </form>
                                     </div>
                                 </div>
+
                             </div>
                             <!--Product card-->
-                            <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-md-4 mb-4">
                                 <div class="card h-100">
-                                    <a href="#"><img class="card-img-top img-fluid" src="img/430.jpg" alt=""></a>
-                                    <div class="card-body" data-name="Tshirt-2" data-price="20">
-                                        <h3 class="product-name">Tshirt 2</h3>
-                                        <h2 class="product-price">&euro; 20</h2>
+                                    <a href="#"><img class="card-img-top img-fluid" src="img/custom-hoodie12.jpg" alt="Custom Hoodie"></a>
+                                    <a href="" onclick="window.open('img/custom-hoodie12.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">Click here to expand</a>
+                                    <div class="card-body" data-name="Custom text hoodie" data-price="40">
+                                        <h3 class="product-name">Custom text hoodie</h3>
+                                        <h2 class="product-price">&euro; 40</h2>
                                         <form class="add-to-cart" action="cart.php" method="get">
                                             <div>
                                                 <label for="qty-1">Quantity</label>
@@ -147,14 +177,17 @@
                                         </form>
                                     </div>
                                 </div>
+
                             </div>
                             <!--Product card-->
-                            <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-md-4 mb-4 d-none d-md-block">
+                                <!--d-md-block HIDES item at given viewport-->
                                 <div class="card h-100">
-                                    <a href="#"><img class="card-img-top img-fluid" src="img/430.jpg" alt=""></a>
-                                    <div class="card-body" data-name="Tshirt 3" data-price="30">
-                                        <h3 class="product-name">Tshirt 3</h3>
-                                        <h2 class="product-price">&euro; 30</h2>
+                                    <a href="#"><img class="card-img-top img-fluid" src="img/custom-hoodie10.jpg" alt="Custom Hoodie"></a>
+                                    <a href="" onclick="window.open('img/custom-hoodie10.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">Click here to expand</a>
+                                    <div class="card-body" data-name="Custom text hoodie" data-price="40">
+                                        <h3 class="product-name">Custom text hoodie</h3>
+                                        <h2 class="product-price">&euro; 40</h2>
                                         <form class="add-to-cart" action="cart.php" method="get">
                                             <div>
                                                 <label for="qty-1">Quantity</label>
@@ -164,9 +197,12 @@
                                         </form>
                                     </div>
                                 </div>
+
                             </div>
+
                         </div>
                     </div>
+
                 </div>
 
             </div>

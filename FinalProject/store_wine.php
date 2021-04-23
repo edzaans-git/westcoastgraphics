@@ -1,3 +1,25 @@
+<?php
+
+session_start();
+
+require 'database.php';
+
+if (isset($_SESSION['user_id'])) {
+
+	$records = $conn->prepare('SELECT id,email,password FROM users WHERE id = :id');
+	$records->bindParam(':id', $_SESSION['user_id']);
+	$records->execute();
+	$results = $records->fetch(PDO::FETCH_ASSOC);
+
+	$user = NULL;
+
+	if (count($results) > 0) {
+		$user = $results;
+	}
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,15 +64,18 @@
 					include 'includes/categories.php';
 					?>
 
-					<div class="col-lg-10 mt-4 mt-5">
+					<!--Product Column-->
+					<div class="col-lg-10 mt-4">
 						<div class="row text-center">
+
 							<!--Product card-->
-							<div class="col-md-4 mb-4">
+							<div class="col-sm-6 col-lg-4 col-md-4 mb-4">
 								<div class="card h-100">
-									<a href="#"><img class="card-img-top img-fluid" src="img/Wheelie.png" alt="Wheelie Shirt"></a>
-									<div class="card-body" data-name="Wheelie T Shirt" data-price="15">
-										<h3 class="product-name">Wheelie T Shirt</h3>
-										<h2 class="product-price">&euro; 15</h2>
+									<a href=""><img class="card-img-top img-fluid" src="img/company-shirt1.jpg" alt="Custom sticker"></a>
+									<a href="" onclick="window.open('img/company-shirt1.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">Click here to expand</a>
+									<div class="card-body" data-name="Custom Tshirt" data-price="15.00">
+										<h3 class="product-name">Multicolor Logo Shirt</h3>
+										<h2 class="product-price">&euro; 15.00</h2>
 										<form class="add-to-cart" action="cart.php" method="get">
 											<div>
 												<label for="qty-1">Quantity</label>
@@ -60,15 +85,16 @@
 										</form>
 									</div>
 								</div>
-
 							</div>
+
 							<!--Product card-->
-							<div class="col-md-4 mb-4">
+							<div class="col-sm-6 col-lg-4 col-md-4 mb-4 d-none d-md-block">
 								<div class="card h-100">
-									<a href="#"><img class="card-img-top img-fluid" src="img/StraightLockdownShirt.jpg" alt="Custom Shirt"></a>
-									<div class="card-body" data-name="Lockdown T Shirt" data-price="15">
-										<h3 class="product-name">Lockdown T Shirt</h3>
-										<h2 class="product-price">&euro; 15</h2>
+									<a href=""><img class="card-img-top img-fluid" src="img/company-shirt4.jpg" alt="Custom sticker"></a>
+									<a href="" onclick="window.open('img/company-shirt4.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">Click here to expand</a>
+									<div class="card-body" data-name="Company TShirt" data-price="12.50">
+										<h3 class="product-name">Single Colour Logo</h3>
+										<h2 class="product-price">&euro; 12.50</h2>
 										<form class="add-to-cart" action="cart.php" method="get">
 											<div>
 												<label for="qty-1">Quantity</label>
@@ -78,15 +104,16 @@
 										</form>
 									</div>
 								</div>
-
 							</div>
 							<!--Product card-->
-							<div class="col-md-4 mb-4">
+							<!--Product card-->
+							<div class="col-sm-6 col-lg-4 col-md-4 mb-4 d-none d-md-block">
 								<div class="card h-100">
-									<a href="#"><img class="card-img-top img-fluid" src="img/MonkiiWhite.png" alt="Custom Shirt"></a>
-									<div class="card-body" data-name="Monkii T Shirt" data-price="15">
-										<h3 class="product-name">Monkii T Shirt</h3>
-										<h2 class="product-price">&euro; 15</h2>
+									<a href=""><img class="card-img-top img-fluid" src="img/BackBlue.png" alt="Custom sticker"></a>
+									<a href="" onclick="window.open('img/BackBlue.png','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=400px'); return false;">Click here to expand</a>
+									<div class="card-body" data-name="Card Sticker" data-price="15.00">
+										<h3 class="product-name">Single Color Logo</h3>
+										<h2 class="product-price">&euro; 15.00</h2>
 										<form class="add-to-cart" action="cart.php" method="get">
 											<div>
 												<label for="qty-1">Quantity</label>
@@ -96,8 +123,9 @@
 										</form>
 									</div>
 								</div>
-
 							</div>
+							<!--Produvt Crad end-->
+
 						</div>
 					</div>
 
@@ -112,15 +140,18 @@
 
 					</div>
 
+					<!--Product Column-->
 					<div class="col-lg-10 mt-4">
 						<div class="row text-center">
+
 							<!--Product card-->
-							<div class="col-md-4 mb-4">
+							<div class="col-sm-6 col-lg-4 col-md-4 mb-4">
 								<div class="card h-100">
-									<a href="#"><img class="card-img-top img-fluid" src="img/430.jpg" alt=""></a>
-									<div class="card-body" data-name="Tshirt-1" data-price="10">
-										<h3 class="product-name">Tshirt 1</h3>
-										<h2 class="product-price">&euro; 10</h2>
+									<a href="img/Custom-van1.jpg" target="_blank"><img class="card-img-top img-fluid" src="img/Custom-van1.jpg" alt="Custom sticker"></a>
+									<a href="" onclick="window.open('img/Custom-van1.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">Click here to expand</a>
+									<div class="card-body" data-name="Van side decal" data-price="50">
+										<h3 class="product-name">Van side decal 25'x25'</h3>
+										<h2 class="product-price">&euro; 50</h2>
 										<form class="add-to-cart" action="cart.php" method="get">
 											<div>
 												<label for="qty-1">Quantity</label>
@@ -130,14 +161,17 @@
 										</form>
 									</div>
 								</div>
+
 							</div>
+
 							<!--Product card-->
-							<div class="col-md-4 mb-4">
+							<div class="col-sm-6 col-lg-4 col-md-4 mb-4 d-none d-md-block">
 								<div class="card h-100">
-									<a href="#"><img class="card-img-top img-fluid" src="img/430.jpg" alt=""></a>
-									<div class="card-body" data-name="Tshirt-2" data-price="20">
-										<h3 class="product-name">Tshirt 2</h3>
-										<h2 class="product-price">&euro; 20</h2>
+									<a href=""><img class="card-img-top img-fluid" src="img/Card-sticker-2.jpg" alt="Custom sticker"></a>
+									<a href="" onclick="window.open('img/Card-sticker-2.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">Click here to expand</a>
+									<div class="card-body" data-name="Card Sticker" data-price="7.50">
+										<h3 class="product-name">10 Single Color Stickers</h3>
+										<h2 class="product-price">&euro; 2.50</h2>
 										<form class="add-to-cart" action="cart.php" method="get">
 											<div>
 												<label for="qty-1">Quantity</label>
@@ -147,14 +181,16 @@
 										</form>
 									</div>
 								</div>
+
 							</div>
 							<!--Product card-->
-							<div class="col-md-4 mb-4">
+							<div class="col-sm-6 col-lg-4 col-md-4 mb-4 d-none d-md-block">
 								<div class="card h-100">
-									<a href="#"><img class="card-img-top img-fluid" src="img/430.jpg" alt=""></a>
-									<div class="card-body" data-name="Tshirt 3" data-price="30">
-										<h3 class="product-name">Tshirt 3</h3>
-										<h2 class="product-price">&euro; 30</h2>
+									<a href=""><img class="card-img-top img-fluid" src="img/Custom-van-back.jpg" alt="Custom sticker"></a>
+									<a href="" onclick="window.open('img/Custom-van-back.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">Click here to expand</a>
+									<div class="card-body" data-name="Van sign back" data-price="50">
+										<h3 class="product-name">Van rear sign 25'x25'</h3>
+										<h2 class="product-price">&euro; 50</h2>
 										<form class="add-to-cart" action="cart.php" method="get">
 											<div>
 												<label for="qty-1">Quantity</label>
@@ -164,9 +200,13 @@
 										</form>
 									</div>
 								</div>
+
 							</div>
+							<!--Produvt Crad end-->
+
 						</div>
 					</div>
+
 				</div>
 
 			</div>

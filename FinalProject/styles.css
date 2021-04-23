@@ -19,7 +19,7 @@ body {
 
 #mainNav .nav-link {
     color: #F7EA01;
-    font-size: 1em;
+    font-size: 0.8em;
 }
 
 #mainNav .link-small{
@@ -42,8 +42,8 @@ body {
 }
 
 #mainNav.scrolled {
-    background-color: gray !important;
-    transition: background-color 500ms linear;
+    /*background-color: rgb(25, 92, 236) !important;
+    transition: background-color 500ms linear;*/
   }
 
   /* Styles for main sections*/
@@ -234,10 +234,11 @@ button.button.primar:hover {
 .copyrights {
     color: #FFF200;
 }
-
+/*
 .contact_details {
     border: 2px solid white;
 }
+*/
 
 /*Checkout styles here*/
 
@@ -371,4 +372,14 @@ button.button.primar:hover {
 
 .select-input {
     width: 45%;
+}
+
+#login-text {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 0.5em;
+    color: red;
+}
+
+.contact-us {
+    height: 100px;
 }

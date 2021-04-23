@@ -1,3 +1,27 @@
+<?php
+
+session_start();
+
+require 'database.php';
+
+if (isset($_SESSION['user_id'])) {
+
+	$records = $conn->prepare('SELECT id,email,password FROM users WHERE id = :id');
+	$records->bindParam(':id', $_SESSION['user_id']);
+	$records->execute();
+	$results = $records->fetch(PDO::FETCH_ASSOC);
+
+	$user = NULL;
+
+	if (count($results) > 0) {
+		$user = $results;
+	}
+}
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,10 +46,13 @@
 
 	<?php
 	include 'nav.php';
+	include 'functions/session.php';
+	login_session();
+
 	?>
 
-	<div class="mx-3" id="site">
-		<div id="content">
+	<div class="mx-3 mt-5" id="site">
+		<div id="content" class="mt-5">
 			<h1>Your Shopping Cart</h1>
 			<form id="shopping-cart" action="cart.php" method="get">
 				<table class="shopping-cart">

@@ -1,10 +1,9 @@
     <!--Navbar starts here-->
 
 
-
-    <nav class="navbar navbar-dark bg-dark navbar-expand-md py-0 sticky-top" id="mainNav">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg py-0 sticky-top" id="mainNav">
         <a class="navbar-brand px-5" href="index.php">
-            <img src="img/WestCoastLogo.png" class="img-fluid" width="150" height="50" alt="West Coast Logo">
+            <img src="img/WestCoastLogo.png" class="" width="150" height="70" alt="West Coast Logo">
         </a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="toggle navbar">
             <span class="navbar-toggler-icon"></span>
@@ -26,24 +25,37 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="signup.php" class="nav-link link-small pt-3">Sign Up
-
-                    </a>
+                    <a href="register.php" class="nav-link link-small pt-3">Sign Up </a>
                 </li>
                 <li class="nav-item ">
-                    <a href="login.php" class="nav-link link-small pt-3">Log In
-
-                        <!--Change icon size in the link(64px is default) <img src="https://img.icons8.com/nolan/32/login-rounded-right.png" /> -->
-                    </a>
+                    <a href="login.php" class="nav-link link-small pt-3">Log In</a>
 
                 </li>
                 <li class="nav-item ">
-                    <a href="cart.php" class="nav-link link-small pt-3">Your Cart
+                    <a href="cart.php" class="nav-link link-small pt-3">Your Cart</a>
+                </li>
+                <li class="nav-item d-md-block ">
+                    <p id="login-text" class="pt-3">
 
-                    </a>
+                        <?php if (!empty($user)) : ?>
+                            Welcome : <?= $user['email']; ?>
+                            <a href="logout.php" class="px-2">Logout?</a>
+
+                        <?php elseif (isset($_SESSION['staffname'])) : ?>
+                            Welcome : <?= $_SESSION['staffname']; ?>
+                            <a href="logout.php" class="px-2">Logout?</a>
+
+                        <?php else : ?>
+                            <a href="staff-login.php" class="px-2">Staff Login</a>
+
+                        <?php endif; ?>
+
+                    </p>
+                </li>
+
+                <li>
 
                 </li>
             </ul>
         </div>
     </nav>
-    <!--Navbar ends here-->

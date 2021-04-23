@@ -1,5 +1,7 @@
 <?php
 
+// THIS IS TEST SCIPT...........
+
 function emptyInputSignup($name, $email, $username, $password, $passwordRepeat)
 {
     $result;

@@ -21,6 +21,9 @@ VALUES (LAST_INSERT_ID(),'$service','$date',LAST_INSERT_ID());";
 if ($conn->multi_query($insert) === TRUE) {
     echo 'Booking successfull
                   You will be redirected to main page';
+    '<img src="img/car1.jpg" class="img-fluid" alt="Banner"';
+
+
     header("Refresh:3; index.php", true, 303); // HTTP request delay can be set here
 } else {
     echo "Error: " . $insert . "<br>" . $conn->error;

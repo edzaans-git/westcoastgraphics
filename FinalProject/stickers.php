@@ -1,3 +1,25 @@
+<?php
+
+session_start();
+
+require 'database.php';
+
+if (isset($_SESSION['user_id'])) {
+
+    $records = $conn->prepare('SELECT id,email,password FROM users WHERE id = :id');
+    $records->bindParam(':id', $_SESSION['user_id']);
+    $records->execute();
+    $results = $records->fetch(PDO::FETCH_ASSOC);
+
+    $user = NULL;
+
+    if (count($results) > 0) {
+        $user = $results;
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -45,12 +67,13 @@
                     <div class="col-lg-10 mt-4 mt-5">
                         <div class="row text-center">
                             <!--Product card-->
-                            <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-md-4 mb-4">
                                 <div class="card h-100">
-                                    <a href="#"><img class="card-img-top img-fluid" src="img/rick&morty_adventure.jpeg" alt="Custom sticker"></a>
-                                    <div class="card-body" data-name="Rick Sticker" data-price="2.50">
-                                        <h3 class="product-name">Rick & Morty Sticker</h3>
-                                        <h2 class="product-price">&euro; 2.50</h2>
+                                    <a href=""><img class="card-img-top img-fluid" src="img/Company1.jpg" alt="Custom sticker"></a>
+                                    <a href="" onclick="window.open('img/Company1.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">Click here to expand</a>
+                                    <div class="card-body" data-name="Company stickers" data-price="5">
+                                        <h3 class="product-name">10 Single Colour Stickers</h3>
+                                        <h2 class="product-price">&euro; 5</h2>
                                         <form class="add-to-cart" action="cart.php" method="get">
                                             <div>
                                                 <label for="qty-1">Quantity</label>
@@ -63,12 +86,13 @@
 
                             </div>
                             <!--Product card-->
-                            <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-md-4 mb-4">
                                 <div class="card h-100">
-                                    <a href="#"><img class="card-img-top img-fluid" src="img/rick&morty_vinci.jpg" alt="Custom sticker"></a>
-                                    <div class="card-body" data-name="Rick Sticker" data-price="2.50">
-                                        <h3 class="product-name">Rick & Morty Sticker</h3>
-                                        <h2 class="product-price">&euro; 2.50</h2>
+                                    <a href=""><img class="card-img-top img-fluid" src="img/Company2.jpg" alt="Custom sticker"></a>
+                                    <a href="" onclick="window.open('img/Company2.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">Click here to expand</a>
+                                    <div class="card-body" data-name="Company stickers" data-price="30">
+                                        <h3 class="product-name">50 Single Color Stickers</h3>
+                                        <h2 class="product-price">&euro; 30</h2>
                                         <form class="add-to-cart" action="cart.php" method="get">
                                             <div>
                                                 <label for="qty-1">Quantity</label>
@@ -81,11 +105,12 @@
 
                             </div>
                             <!--Product card-->
-                            <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-md-4 mb-4 d-none d-md-block">
                                 <div class="card h-100">
-                                    <a href="#"><img class="card-img-top img-fluid" src="img/rick&morty_eyes.jpg" alt="Custom sticker"></a>
-                                    <div class="card-body" data-name="Rick Sticker" data-price="2.50">
-                                        <h3 class="product-name">Rick & Morty Sticker</h3>
+                                    <a href=""><img class="card-img-top img-fluid" src="img/Card-sticker-2.jpg" alt="Custom sticker"></a>
+                                    <a href="" onclick="window.open('img/Card-sticker-2.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">Click here to expand</a>
+                                    <div class="card-body" data-name="Card Sticker" data-price="7.50">
+                                        <h3 class="product-name">10 Single Color Stickers</h3>
                                         <h2 class="product-price">&euro; 2.50</h2>
                                         <form class="add-to-cart" action="cart.php" method="get">
                                             <div>
@@ -115,12 +140,13 @@
                     <div class="col-lg-10 mt-4">
                         <div class="row text-center">
                             <!--Product card-->
-                            <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-md-4 mb-4">
                                 <div class="card h-100">
-                                    <a href="#"><img class="card-img-top img-fluid" src="img/rick&morty_random.jpg" alt="Custom sticker"></a>
-                                    <div class="card-body" data-name="Rick Sticker" data-price="2.50">
-                                        <h3 class="product-name">Rick & Morty Sticker</h3>
-                                        <h2 class="product-price">&euro; 2.50</h2>
+                                    <a href=""><img class="card-img-top img-fluid" src="img/Card-sticker-2.jpg" alt="Custom sticker"></a>
+                                    <a href="" onclick="window.open('img/Card-sticker-2.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">Click here to expand</a>
+                                    <div class="card-body" data-name="Card Sticker" data-price="30">
+                                        <h3 class="product-name">50 Multi Colour Stickers</h3>
+                                        <h2 class="product-price">&euro; 30</h2>
                                         <form class="add-to-cart" action="cart.php" method="get">
                                             <div>
                                                 <label for="qty-1">Quantity</label>
@@ -133,12 +159,13 @@
 
                             </div>
                             <!--Product card-->
-                            <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-md-4 mb-4">
                                 <div class="card h-100">
-                                    <a href="#"><img class="card-img-top img-fluid" src="img/rick&morty_eyes.jpg" alt="Custom sticker"></a>
-                                    <div class="card-body" data-name="Rick Sticker" data-price="2.50">
-                                        <h3 class="product-name">Rick & Morty Sticker</h3>
-                                        <h2 class="product-price">&euro; 2.50</h2>
+                                    <a href=""><img class="card-img-top img-fluid" src="img/Card-sticker1.jpg" alt="Custom sticker"></a>
+                                    <a href="" onclick="window.open('img/Card-sticker1.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">Click here to expand</a>
+                                    <div class="card-body" data-name="Rick Sticker" data-price="7.50">
+                                        <h3 class="product-name">10 Card Stickers</h3>
+                                        <h2 class="product-price">&euro; 7.50</h2>
                                         <form class="add-to-cart" action="cart.php" method="get">
                                             <div>
                                                 <label for="qty-1">Quantity</label>
@@ -151,12 +178,13 @@
 
                             </div>
                             <!--Product card-->
-                            <div class="col-lg-4 col-md-6 mb-4">
+                            <div class="col-sm-6 col-lg-4 col-md-4 mb-4 d-none d-md-block">
                                 <div class="card h-100">
-                                    <a href="#"><img class="card-img-top img-fluid" src="img/rick&morty_double.jpg" alt="Custom sticker"></a>
-                                    <div class="card-body" data-name="Rick Sticker" data-price="2.50">
-                                        <h3 class="product-name">Rick & Morty Sticker</h3>
-                                        <h2 class="product-price">&euro; 2.50</h2>
+                                    <a href=""><img class="card-img-top img-fluid" src="img/Card-sticker1.jpg" alt="Custom sticker"></a>
+                                    <a href="" onclick="window.open('img/Card-sticker1.jpg','targetWindow', 'toolbar=no, location=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1090px, height=550px, top=25px left=120px'); return false;">Click here to expand</a>
+                                    <div class="card-body" data-name="Card Sticker" data-price="30">
+                                        <h3 class="product-name">50 Card Stickers</h3>
+                                        <h2 class="product-price">&euro; 30</h2>
                                         <form class="add-to-cart" action="cart.php" method="get">
                                             <div>
                                                 <label for="qty-1">Quantity</label>

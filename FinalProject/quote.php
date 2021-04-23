@@ -1,3 +1,25 @@
+<?php
+
+session_start();
+
+require 'database.php';
+
+if (isset($_SESSION['user_id'])) {
+
+    $records = $conn->prepare('SELECT id,email,password FROM users WHERE id = :id');
+    $records->bindParam(':id', $_SESSION['user_id']);
+    $records->execute();
+    $results = $records->fetch(PDO::FETCH_ASSOC);
+
+    $user = NULL;
+
+    if (count($results) > 0) {
+        $user = $results;
+    }
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -47,7 +69,7 @@
                                 <form action="quote-success.php" id="contactForm" name="sentMessage" novalidate="novalidate" method="post">
                                     <div class="row align-items-stretch">
 
-                                        <div class="col-md-6">
+                                        <div class="col-md-8 px-0 align-items-center mx-auto px-5">
                                             <div class="form-group">
                                                 <input class="form-control" name="name" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name." />
                                                 <p class="help-block text-danger"></p>
@@ -60,7 +82,7 @@
                                                 <input class="form-control" name="phone" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number." />
                                                 <p class="help-block text-danger"></p>
                                             </div>
-                                            <div class="input-group-prepend">
+                                            <div class="input-group-prepend mb-3">
                                                 <span class="input-group-text bg-white px-4 border-md border-right-0 select">
                                                     <i class="fa fa-user text-muted" required>Please pick your service</i>
                                                 </span>

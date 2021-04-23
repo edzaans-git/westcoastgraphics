@@ -19,7 +19,13 @@ if (!empty($_POST['email']) && !empty($_POST['password'])) :
 
     if (count($results) > 0 && password_verify($_POST['password'], $results['password'])) {
 
+
+
         $_SESSION['user_id'] = $results['id'];
+
+        // Set cookie using USERNAME for testing, insert POST values to set it for finished work
+        setcookie('user_email', $_POST['email'], time() + 60 * 60 * 7);
+
         header("Location: /");
     } else {
         $message = 'Sorry, those credentials do not match';
@@ -41,7 +47,7 @@ endif;
 <body>
 
     <div class="header">
-        <a href="/">Your App Name</a>
+        <a href="/">West Coast Graphics</a>
     </div>
 
     <?php if (!empty($message)) : ?>
@@ -56,9 +62,16 @@ endif;
         <input type="text" placeholder="Enter your email" name="email">
         <input type="password" placeholder="and password" name="password">
 
+        <!-- Remember me (Sets COOKIES) -->
+        <label for="remember">Remember me?
+            <input type="checkbox" name="remember" id="remember" value="1">
+            <p style="font-size:10px">*By clicking here you accept use of cookies*</p>
+        </label>
+
         <input type="submit">
 
     </form>
+
 
 </body>
 

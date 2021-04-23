@@ -20,24 +20,7 @@ if (isset($_SESSION['user_id'])) {
 
 ?>
 
-<?php if (!empty($user)) : ?>
 
-    <br />Welcome <?= $user['email']; ?>
-    <br /><br />You are successfully logged in!
-    <br /><br />
-    <a href="logout.php">Logout?</a>
-
-<?php else : ?>
-
-    <h1>Please Login or Register</h1>
-    <a href="login.php">Login</a> or
-    <a href="register.php">Register</a>
-
-<?php endif; ?>
-
-</body>
-
-</html>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -45,7 +28,7 @@ if (isset($_SESSION['user_id'])) {
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -54,15 +37,13 @@ if (isset($_SESSION['user_id'])) {
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 
     <script type="text/javascript" src="js/jquery.shop.js"></script>
+    <script type="text/javascript" src="js/custom_js.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
     <title>West Coast Graphics</title>
 </head>
 
 <body>
-
-
-
 
     <?php
     include 'nav.php';
@@ -71,24 +52,11 @@ if (isset($_SESSION['user_id'])) {
 
     <section class="container-fluid bg-light">
 
-        <div class="row">
-            <div class="col-md-12">
-                <!-- Header -->
-                <header class="mx-auto">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner" style="height: 300px">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100" src="img/banner_bg.jpg" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100 img-fluid" src="img/office.jpg" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100 img-fluid" src="img/banner_bg.jpg" alt="Third slide">
-                            </div>
-                        </div>
-                    </div>
-                </header>
+
+
+        <div class="row align-items-center">
+            <div class="col-md-12 px-0">
+                <img src="img/banner_bg2.jpg" class="img-fluid" alt="Banner Picture">
             </div>
         </div>
 

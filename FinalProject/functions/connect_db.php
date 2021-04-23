@@ -5,8 +5,8 @@ function connect_db()
 {
 
     $server = 'localhost';
-    $username = 'root';
-    $password = '';
+    $username = 'newuser';
+    $password = 'password';
     $dbname = 'ppit_test';
 
     $conn = mysqli_connect($server, $username, $password, $dbname);
